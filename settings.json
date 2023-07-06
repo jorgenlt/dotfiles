@@ -1,0 +1,25 @@
+{
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "GitHub Dark Default",
+    "settingsSync.ignoredSettings": [
+        "-emmet.extensionsPath"
+    ],
+    "explorer.confirmDelete": false,
+    "emmet.includeLanguages": {
+        "html.erb": "html"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.zoomLevel": 2,
+    "genieai.enableConversationHistory": true,
+    "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.fontWeightBold": "400",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    // "emmet.showSuggestionsAsSnippets": true,
+    // "emmet.includeLanguages": {
+    //     "erb": "html",
+    //     "html.erb": "html",
+    //     "ruby": "html"
+    // }
+}
