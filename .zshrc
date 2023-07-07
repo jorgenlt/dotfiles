@@ -1,6 +1,9 @@
 ZSH=$HOME/.oh-my-zsh
 
-export ZDOTDIR=/dotfiles
+# export ZDOTDIR=/dotfiles
+
+# Pull dotfiles on every start
+# source ~/setup/dotfiles/pull-dotfiles.sh
 
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ZSH_THEME="robbyrussell"
@@ -113,5 +116,4 @@ function stop() {
         echo "Invalid service specified."
     fi
 }
-
 
