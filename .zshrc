@@ -1,18 +1,32 @@
+# Set the ZSH variable to the path of the Oh-My-Zsh directory
 ZSH=$HOME/.oh-my-zsh
 
-# export ZDOTDIR=/dotfiles
+# Themes
+# https://github.com/robbyrussell/oh-my-zsh/wiki/themes
+# ZSH_THEME="robbyrussell"
+# Load Starship prompt. https://starship.rs/
+eval "$(starship init zsh)"
 
-# Pull dotfiles on every start
-# source ~/setup/dotfiles/pull-dotfiles.sh
-
-# You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-ZSH_THEME="robbyrussell"
-
-# Useful oh-my-zsh plugins for Le Wagon bootcamps
-plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search ssh-agent command-not-found sudo zsh-autosuggestions web-search copypath copyfile copybuffer dirhistory history z)
-
-# (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
-export HOMEBREW_NO_ANALYTICS=1
+# Plugins
+plugins=(
+  git 
+  gitfast 
+  last-working-dir 
+  common-aliases 
+  zsh-syntax-highlighting 
+  history-substring-search 
+  ssh-agent 
+  command-not-found 
+  sudo 
+  zsh-autosuggestions 
+  web-search 
+  copypath 
+  copyfile 
+  copybuffer 
+  dirhistory 
+  history 
+  z
+)
 
 # Disable warning about insecure completion-dependent directories
 ZSH_DISABLE_COMPFIX=true
@@ -21,6 +35,9 @@ ZSH_DISABLE_COMPFIX=true
 source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
 unalias lt # we need `lt` for https://github.com/localtunnel/localtunnel
+
+# Aliases stored in the .aliases file and load the here.
+[[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
 # Load rbenv if installed (to manage your Ruby versions)
 export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
@@ -63,28 +80,23 @@ type -a nvm > /dev/null && load-nvmrc
 # Same for `./node_modules/.bin` and nodejs
 export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 
-# Store your own aliases in the ~/.aliases file and load the here.
-[[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
-
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+# Configure the editor for Bundler and general use
 export BUNDLER_EDITOR=code
 export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
 
-eval "$(starship init zsh)"
-
+# Set the Android SDK path
 export ANDROID_HOME="${HOME}/Android/Sdk"
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$ANDROID_HOME/emulator"
 
-alias gpt="$HOME/nodejs-chatgpt/run-chatgpt.sh"
-
-# mongoDB functions
+# Define functions for managing MongoDB services
 function status() {
     if [ "$1" = "mongod" ]; then
         sudo systemctl status mongod
@@ -117,3 +129,7 @@ function stop() {
     fi
 }
 
+# Old commands
+# export ZDOTDIR=/dotfiles
+# Pull dotfiles on every start
+# source ~/setup/dotfiles/pull-dotfiles.sh
