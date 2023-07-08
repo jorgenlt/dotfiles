@@ -7,3 +7,6 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 
 # ChatGPT nodejs
 alias gpt="$HOME/nodejs-chatgpt/run-chatgpt.sh"
+
+# Updates
+alias update="sudo apt update && sudo apt upgrade"
