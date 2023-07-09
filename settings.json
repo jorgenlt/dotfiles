@@ -1,6 +1,5 @@
 {
-    "files.autoSave": "afterDelay",
-    "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDragAndDrop": false,
     "workbench.colorTheme": "GitHub Dark Default",
     "settingsSync.ignoredSettings": [
         "-emmet.extensionsPath"
@@ -16,6 +15,9 @@
     "terminal.integrated.fontWeightBold": "400",
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
+    "files.autoSave": "afterDelay"
+
+    
     // "emmet.showSuggestionsAsSnippets": true,
     // "emmet.includeLanguages": {
     //     "erb": "html",

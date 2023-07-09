@@ -131,5 +131,3 @@ function stop() {
 
 # Old commands
 # export ZDOTDIR=/dotfiles
-# Pull dotfiles on every start
-# source ~/setup/dotfiles/pull-dotfiles.sh
