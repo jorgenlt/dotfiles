@@ -9,13 +9,14 @@
         "html.erb": "html"
     },
     "liveServer.settings.donotShowInfoMsg": true,
-    "window.zoomLevel": 2,
     "genieai.enableConversationHistory": true,
     "terminal.integrated.fontWeight": "400",
     "terminal.integrated.fontWeightBold": "400",
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": 1,
+    "genieai.openai.maxTokens": 2500
 
     
     // "emmet.showSuggestionsAsSnippets": true,
