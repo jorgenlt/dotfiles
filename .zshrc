@@ -52,6 +52,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# starship.toml moved to dotfiles folder
+export STARSHIP_CONFIG=~/setup/dotfiles/starship.toml
+
 # Call `nvm use` automatically in a directory with a `.nvmrc` file
 autoload -U add-zsh-hook
 load-nvmrc() {
@@ -128,6 +131,8 @@ function stop() {
         echo "Invalid service specified."
     fi
 }
+
+
 
 # Old commands
 # export ZDOTDIR=/dotfiles
