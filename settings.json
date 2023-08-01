@@ -15,8 +15,8 @@
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
     "files.autoSave": "afterDelay",
-    "window.zoomLevel": 1,
-    "genieai.openai.maxTokens": 2500
+    "genieai.openai.maxTokens": 2500,
+    "window.zoomLevel": 1
 
     
     // "emmet.showSuggestionsAsSnippets": true,
