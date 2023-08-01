@@ -1,13 +1,18 @@
 // Place your key bindings in this file to override the defaults
 [
   {
-    "key": "ctrl+shift+v",
+    "key": "ctrl+v",
     "command": "pasteAndIndent.action",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "cmd+shift+v",
-    "command": "pasteAndIndent.action",
+    "key": "ctrl+v",
+    "command": "editor.action.clipboardPasteAction",
+    "when": "!editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "editor.action.clipboardPasteAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
