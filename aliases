@@ -13,3 +13,9 @@ alias update="sudo apt update && sudo apt upgrade"
 
 # Fix Brave not rendering elements correct
 alias brave-fix="rm -rf ~/.config/BraveSoftware/Brave-Browser/Default/GPUCache"
+
+# CPU Sensor
+alias cpu="watch -n 2 sensors"
+
+# GPU Sensor
+alias nvidia="watch -n 2 nvidia-smi"
