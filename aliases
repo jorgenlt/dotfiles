@@ -19,3 +19,9 @@ alias cpu="watch -n 2 sensors"
 
 # GPU Sensor
 alias nvidia="watch -n 2 nvidia-smi"
+
+# code .
+alias c="code ."
+
+# npm run dev
+alias dev="npm run dev"
