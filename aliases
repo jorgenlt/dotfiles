@@ -9,7 +9,7 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 alias gpt="$HOME/nodejs-chatgpt/run-chatgpt.sh"
 
 # Updates
-alias update="sudo apt update && sudo apt upgrade"
+alias u="sudo apt update && sudo apt upgrade"
 
 # Fix Brave not rendering elements correct
 alias brave-fix="rm -rf ~/.config/BraveSoftware/Brave-Browser/Default/GPUCache"

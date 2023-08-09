@@ -15,8 +15,10 @@
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
     "files.autoSave": "afterDelay",
-    "genieai.openai.maxTokens": 2500,
-    "window.zoomLevel": 1
+    "genieai.openai.maxTokens": 5000,
+    "window.zoomLevel": 1,
+    "genieai.openai.model": "gpt-4",
+    "genieai.openai.organization": "org-OOnJyALg0FAuO8zKObevSwkJ"
 
     
     // "emmet.showSuggestionsAsSnippets": true,
