@@ -31,3 +31,6 @@ alias b="gh browse"
 
 # hardware information
 alias hardware="sudo lshw"
+
+# restart computer
+alias reboot="shutdown -r now"
