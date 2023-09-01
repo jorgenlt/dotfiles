@@ -16,9 +16,16 @@
     "editor.detectIndentation": false,
     "files.autoSave": "afterDelay",
     "genieai.openai.maxTokens": 5000,
-    "window.zoomLevel": 1,
     "genieai.openai.model": "gpt-4",
-    "genieai.openai.organization": "org-OOnJyALg0FAuO8zKObevSwkJ"
+    "genieai.openai.organization": "org-OOnJyALg0FAuO8zKObevSwkJ",
+    "genieai.openai.temperature": 0.5,
+    "window.zoomLevel": 1,
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 
     
     // "emmet.showSuggestionsAsSnippets": true,
