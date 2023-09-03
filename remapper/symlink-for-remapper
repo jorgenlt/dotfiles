@@ -1,0 +1,1 @@
+ln -sv /home/jlt/setup/dotfiles/remapper/jlt-colemak-custom.json /home/jlt/.config/input-remapper-2/presets/AT\ Translated\ Set\ 2\ keyboard
