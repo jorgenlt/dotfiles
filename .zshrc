@@ -12,8 +12,7 @@ plugins=(
   git 
   gitfast 
   last-working-dir 
-  common-aliases 
-  zsh-syntax-highlighting 
+  common-aliases
   history-substring-search 
   ssh-agent 
   command-not-found 
@@ -37,7 +36,7 @@ unalias rm # No interactive rm by default (brought by plugins/common-aliases)
 unalias lt # we need `lt` for https://github.com/localtunnel/localtunnel
 
 # Aliases stored in the .aliases file and load the here.
-[[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
+[[ -f "$HOME/dotfiles/aliases" ]] && source "$HOME/dotfiles/aliases"
 
 # Load rbenv if installed (to manage your Ruby versions)
 export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
@@ -53,7 +52,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # starship.toml moved to dotfiles folder
-export STARSHIP_CONFIG=~/setup/dotfiles/starship.toml
+export STARSHIP_CONFIG=~/dotfiles/starship.toml
 
 # Call `nvm use` automatically in a directory with a `.nvmrc` file
 autoload -U add-zsh-hook
@@ -132,7 +131,8 @@ function stop() {
     fi
 }
 
-
+# Then, enable syntax highlighting in the current interactive shell:
+source /home/jlt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Old commands
 # export ZDOTDIR=/dotfiles
