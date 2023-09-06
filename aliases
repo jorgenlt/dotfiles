@@ -10,6 +10,8 @@ alias gpt="$HOME/nodejs-chatgpt/run-chatgpt.sh"
 
 # Updates
 alias u="sudo apt update && sudo apt upgrade"
+alias ur="sudo apt update && sudo apt upgrade && shutdown -r now"
+alias us="sudo apt update && sudo apt upgrade && shutdown now"
 
 # Fix Brave not rendering elements correct
 alias brave-fix="rm -rf ~/.config/BraveSoftware/Brave-Browser/Default/GPUCache"

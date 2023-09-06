@@ -8,23 +8,27 @@ ZSH=$HOME/.oh-my-zsh
 eval "$(starship init zsh)"
 
 # Plugins
-plugins=(
+plugins=( 
+  aliases 
+  colored-man-pages 
+  command-not-found 
+  common-aliases 
+  copybuffer 
+  copyfile 
+  copypath 
+  dirhistory 
+  extract 
   git 
   gitfast 
-  last-working-dir 
-  common-aliases
-  history-substring-search 
-  ssh-agent 
-  command-not-found 
-  sudo 
-  zsh-autosuggestions 
-  web-search 
-  copypath 
-  copyfile 
-  copybuffer 
-  dirhistory 
   history 
+  history-substring-search 
+  last-working-dir 
+  rand-quote
+  ssh-agent 
+  sudo 
+  web-search 
   z
+  zsh-autosuggestions
 )
 
 # Disable warning about insecure completion-dependent directories
