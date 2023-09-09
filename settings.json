@@ -29,12 +29,5 @@
     "[scss]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
-
-    
-    // "emmet.showSuggestionsAsSnippets": true,
-    // "emmet.includeLanguages": {
-    //     "erb": "html",
-    //     "html.erb": "html",
-    //     "ruby": "html"
     // }
 }
