@@ -138,5 +138,8 @@ function stop() {
 # Then, enable syntax highlighting in the current interactive shell:
 source /home/jlt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Init homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 # Old commands
 # export ZDOTDIR=/dotfiles
