@@ -126,7 +126,7 @@
     "when": "editorHasSelection"
   },
   {
-    "key": "ctrl+shift+alt+f",
+    "key": "ctrl+2",
     "command": "editor.action.formatDocument",
     "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
   },
@@ -134,5 +134,14 @@
     "key": "ctrl+shift+i",
     "command": "-editor.action.formatDocument",
     "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "-workbench.action.focusSecondEditorGroup",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "-workbench.action.focusSecondEditorGroup"
   }
 ]
