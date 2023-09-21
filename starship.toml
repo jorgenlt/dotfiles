@@ -1,4 +1,4 @@
-format = ' [╭──](cyan) $all[╰─▶](cyan) '
+format = ' [┌─](cyan) $all[└──▶](cyan) '
 
 # [aws]
 # format = '\[[ $symbol($profile)(\($region\))(\[$duration\]) ]($style)\]'
