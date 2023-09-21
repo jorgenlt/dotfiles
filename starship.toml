@@ -112,8 +112,8 @@ format = ' [┌─](cyan) $all[└──▶](cyan) '
 # [nix_shell]
 # format = '\[[ $symbol$state( \($name\)) ]($style)\]'
 
-# [nodejs]
-# format = '\[[ $symbol($version) ](bold #a5ff8e)\]'
+[nodejs]
+format = 'via [$symbol($version)](dimmed bold green) '
 
 # [ocaml]
 # format = '\[[ $symbol($version)(\($switch_indicator$switch_name\)) ]($style)\]'
