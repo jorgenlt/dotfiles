@@ -4,6 +4,9 @@ alias myip="curl https://ipinfo.io/json" # or /ip for plain-text ip
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 
+# Laptop battery information
+alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
+
 # ChatGPT nodejs
 alias gpt="$HOME/nodejs-chatgpt/run-chatgpt.sh"
 
