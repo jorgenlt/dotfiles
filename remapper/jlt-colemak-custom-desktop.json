@@ -522,5 +522,22 @@
         "target_uinput": "keyboard",
         "output_symbol": "Left",
         "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 100,
+                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
+            },
+            {
+                "type": 1,
+                "code": 20,
+                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "ISO_Level3_Shift + dead_diaeresis",
+        "mapping_type": "key_macro"
     }
 ]
