@@ -10,10 +10,10 @@ alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 # ChatGPT nodejs
 alias gpt="$HOME/nodejs-chatgpt/run-chatgpt.sh"
 
-# Updates
-alias u="sudo apt update && sudo apt upgrade -y"
-alias ur="sudo apt update && sudo apt upgrade -y && shutdown -r now"
-alias us="sudo apt update && sudo apt upgrade -y && shutdown now"
+# Update apt and snap
+alias u="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
+alias ur="sudo apt update && sudo apt upgrade -y && sudo snap refresh && shutdown -r now"
+alias us="sudo apt update && sudo apt upgrade -y && sudo snap refresh && shutdown now"
 
 # Fix Brave not rendering elements correct
 alias brave-fix="rm -rf ~/.config/BraveSoftware/Brave-Browser/Default/GPUCache"
