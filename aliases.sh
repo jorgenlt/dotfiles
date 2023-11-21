@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Get External IP / Internet Speed
 alias myip="curl https://ipinfo.io/json" # or /ip for plain-text ip
 
@@ -10,13 +12,13 @@ alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 # ChatGPT nodejs
 alias gpt="$HOME/nodejs-chatgpt/run-chatgpt.sh"
 
-# Update apt and snap
-alias u="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
-alias ur="sudo apt update && sudo apt upgrade -y && sudo snap refresh && shutdown -r now"
-alias us="sudo apt update && sudo apt upgrade -y && sudo snap refresh && shutdown now"
+# Update apt and snap packages
+alias u="$HOME/dotfiles/update.sh"
+alias ur="u && reboot"
+alias us="u && poweroff"
 
 # Fix Brave not rendering elements correct
-alias brave-fix="rm -rf ~/.config/BraveSoftware/Brave-Browser/Default/GPUCache"
+alias brave-fix="rm -rf $HOME/.config/BraveSoftware/Brave-Browser/Default/GPUCache"
 
 # CPU Sensor
 alias cpu="watch -n 2 sensors"
@@ -36,5 +38,3 @@ alias b="gh browse"
 # hardware information
 alias hardware="sudo lshw"
 
-# restart computer
-alias reboot="shutdown -r now"
