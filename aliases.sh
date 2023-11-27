@@ -32,8 +32,9 @@ alias c="code ."
 # npm run dev
 alias dev="npm run dev"
 
-# gh browse
+# git / github
 alias b="gh browse"
+alias gpom="git pull origin master"
 
 # hardware information
 alias hardware="sudo lshw"
