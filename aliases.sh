@@ -20,8 +20,9 @@ alias us="u && poweroff"
 # Fix Brave not rendering elements correct
 alias brave-fix="rm -rf $HOME/.config/BraveSoftware/Brave-Browser/Default/GPUCache"
 
-# CPU Sensor
-alias cpu="watch -n 2 sensors"
+# CPU temperatures / sensors
+alias cpu="$HOME/dotfiles/cpu-temp.sh"
+alias temps="watch -n 2 sensors"
 
 # GPU Sensor
 alias nvidia="watch -n 2 nvidia-smi"
