@@ -27,6 +27,8 @@ alias temps="watch -n 2 sensors"
 # GPU Sensor
 alias nvidia="watch -n 2 nvidia-smi"
 
+# Use discrete GPU
+alias dgpu="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
 # code .
 alias c="code ."
 
