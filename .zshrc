@@ -7,9 +7,6 @@ eval "$(starship init zsh)"
 # starship.toml moved to dotfiles folder
 export STARSHIP_CONFIG=$HOME/dotfiles/starship.toml
 
-# Enable syntax highlighting in the current interactive shell:
-source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Plugins
 plugins=( 
   aliases 
@@ -78,6 +75,9 @@ export PATH="$PATH:$ANDROID_HOME/emulator"
 
 # Load MongoDB manager script
 source $HOME/dotfiles/mongodb_manager.sh
+
+# Enable syntax highlighting in the current interactive shell:
+source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Init homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
