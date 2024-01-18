@@ -399,7 +399,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Control_L + c",
+        "output_symbol": "space",
         "mapping_type": "key_macro"
     },
     {
