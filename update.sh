@@ -15,7 +15,7 @@ print_header "UPDATING APT PACKAGE INDEX"
 sudo apt update
 
 print_header "UPGRADING APT PACKAGES"
-sudo apt upgrade -y
+sudo apt upgrade -y --allow-downgrades
 
 # Update SNAP packages
 print_header "UPDATING SNAP PACKAGES"
