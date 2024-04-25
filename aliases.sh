@@ -8,14 +8,13 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 
 # System information
 alias about="neofetch"
-
-# Laptop battery information
+alias hardware="sudo lshw"
+alias cpu="$HOME/dotfiles/cpu-temp.sh"
+alias temps="watch -n 2 sensors"
+alias nvidia="watch -n 2 nvidia-smi"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
-# ChatGPT nodejs
-alias gpt="$HOME/nodejs-chatgpt/run-chatgpt.sh"
-
-# Update apt and snap packages
+# System update
 alias u="$HOME/dotfiles/update.sh"
 alias ur="u && reboot"
 alias us="u && poweroff"
@@ -23,25 +22,15 @@ alias us="u && poweroff"
 # Fix Brave not rendering elements correct
 alias brave-fix="rm -rf $HOME/.config/BraveSoftware/Brave-Browser/Default/GPUCache"
 
-# CPU temperatures / sensors
-alias cpu="$HOME/dotfiles/cpu-temp.sh"
-alias temps="watch -n 2 sensors"
-
-# GPU Sensor
-alias nvidia="watch -n 2 nvidia-smi"
-
 # Use discrete GPU
 alias dgpu="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
-# code .
+
+# Open all files in IDE
 alias c="code ."
 
-# npm run dev
+# Development aliases
 alias dev="npm run dev"
 
 # git / github
 alias b="gh browse"
 alias gpom="git pull origin master"
-
-# hardware information
-alias hardware="sudo lshw"
-
