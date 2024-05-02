@@ -365,23 +365,6 @@
             },
             {
                 "type": 1,
-                "code": 57,
-                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "Down",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 100,
-                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
-            },
-            {
-                "type": 1,
                 "code": 33,
                 "origin_hash": "53035ff0e2c9245269906585a7256aaa"
             }
@@ -538,6 +521,52 @@
         ],
         "target_uinput": "keyboard",
         "output_symbol": "ISO_Level3_Shift + dead_diaeresis",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 100,
+                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
+            },
+            {
+                "type": 1,
+                "code": 48,
+                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Down",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 100,
+                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
+            },
+            {
+                "type": 1,
+                "code": 27,
+                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Shift_R + dead_diaeresis",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 126,
+                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L",
         "mapping_type": "key_macro"
     }
 ]
