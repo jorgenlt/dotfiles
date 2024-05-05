@@ -41,6 +41,9 @@ unalias lt # we need `lt` for https://github.com/localtunnel/localtunnel
 # Load custom aliases
 source "$HOME/dotfiles/aliases.sh"
 
+# Load custom functions
+source "$HOME/dotfiles/functions.sh"
+
 # Load rbenv if installed (to manage your Ruby versions)
 export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
 type -a rbenv > /dev/null && eval "$(rbenv init -)"
