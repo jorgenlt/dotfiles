@@ -38,3 +38,7 @@ shutdown_system() {
     sudo shutdown now
 }
 
+# Function to get the CPU temperature
+cpu_temp() {
+    sensors k10temp-pci-00c3 | grep Tctl | awk '{print $2}'
+}

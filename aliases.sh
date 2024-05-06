@@ -9,7 +9,7 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 # System information
 alias about="neofetch"
 alias hardware="sudo lshw"
-alias cpu="$HOME/dotfiles/cpu-temp.sh"
+alias cpu="cpu_temp"
 alias temps="watch -n 2 sensors"
 alias nvidia="watch -n 2 nvidia-smi"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
