@@ -590,5 +590,17 @@
         "target_uinput": "keyboard",
         "output_symbol": "ISO_Level3_Shift + dead_diaeresis\t",
         "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 97,
+                "origin_hash": "748e31550c24fc009038438dc4fce338"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L",
+        "mapping_type": "key_macro"
     }
 ]
