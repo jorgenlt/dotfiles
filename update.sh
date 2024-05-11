@@ -1,15 +1,19 @@
 #!/bin/bash
 
+# Function to print a colored header
 print_header() {
   echo -e "\n\e[1;32m$1\e[0m"
 }
 
-# Update APT package index and then upgrade the packages
+# Update APT package index, upgrade the packages and then clean up old packages
 print_header "UPDATING APT PACKAGE INDEX"
 sudo apt update
 
 print_header "UPGRADING APT PACKAGES"
 sudo apt upgrade -y --allow-downgrades
+
+print_header "CLEANING UP OLD APT PACKAGES"
+sudo apt autoremove -y
 
 # Update SNAP packages
 print_header "UPDATING SNAP PACKAGES"
