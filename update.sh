@@ -4,12 +4,6 @@ print_header() {
   echo -e "\n\e[1;32m$1\e[0m"
 }
 
-# Function to update packages
-update_packages() {
-  print_header "UPDATING $1 PACKAGES"
-  sudo $2 $3
-}
-
 # Update APT package index and then upgrade the packages
 print_header "UPDATING APT PACKAGE INDEX"
 sudo apt update
