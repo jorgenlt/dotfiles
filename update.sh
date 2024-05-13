@@ -23,12 +23,15 @@ sudo snap refresh
 print_header "UPDATING FLATPAK PACKAGES"
 flatpak update -y
 
-# Update Homebrew package index and then upgrade the packages
+# Update Homebrew package index, upgrade the packages and then clean up old packages
 print_header "UPDATING HOMEBREW PACKAGE INDEX"
 brew update
 
 print_header "UPGRADING HOMEBREW PACKAGES"
 brew upgrade
+
+print_header "CLEANING UP OLD HOMEBREW PACKAGES"
+brew cleanup
 
 sleep 1
 
