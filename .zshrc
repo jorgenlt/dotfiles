@@ -4,27 +4,24 @@ export ZSH="$HOME/.oh-my-zsh"
 # Path to dotfiles
 export DOT="$HOME/dotfiles"
 
-# Plugins
+# Plugins (https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
 plugins=(
-  aliases
-  colored-man-pages
-  command-not-found
-  common-aliases
-  # copybuffer
-  # copyfile
-  # copypath
-  # dirhistory
-  extract
-  git
-  gitfast
-  history
-  history-substring-search
-  last-working-dir
-  ssh-agent
-  sudo
-  web-search
-  z
-  zsh-autosuggestions
+  aliases             # List the shortcuts that are currently available
+  colored-man-pages   # Adds colors to man pages
+  command-not-found   # Suggests packages to be installed if a command cannot be found
+  common-aliases      # Creates helpful shortcut aliases for many commonly used commands
+  copyfile            # Puts the contents of a file in your system clipboard
+  dirhistory          # Adds keyboard shortcuts for navigating directory history and hierarchy. Alt + arrows.
+  extract             # Extracts any archive file you pass it
+  git                 #  Git aliases and a few useful functions
+  gitfast             # Adds completion for Git
+  history             # Provides convenient aliases for using the history command
+  last-working-dir    # Keeps track of the last used working directory
+  ssh-agent           # Set up and load whichever credentials you want for ssh connections
+  sudo                # Prefix your current or previous commands with sudo by pressing esc twice
+  web-search          # Adds aliases for searching with Google, Wiki, Bing, YouTube and other popular services
+  z                   # Tracks your most visited directories, easy access with z <foldername>
+  zsh-autosuggestions # Provides suggestions of commands based on history
 )
 
 # Load Oh-My-Zsh

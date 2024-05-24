@@ -2,6 +2,7 @@
 
 # System
 alias rm="rm -v"
+alias alias="als"
 
 # System information
 alias about="neofetch"
