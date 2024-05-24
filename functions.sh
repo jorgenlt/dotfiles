@@ -42,3 +42,9 @@ shutdown_system() {
 cpu_temp() {
     sensors k10temp-pci-00c3 | grep Tctl | awk '{print $2}'
 }
+
+# Function to cat pdf-files
+catpdf() {
+    pdftotext "$1" - | cat
+}
+
