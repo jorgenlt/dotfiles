@@ -12,7 +12,7 @@ alias nvidia="watch -n 2 nvidia-smi"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
 # System update
-alias u="$HOME/dotfiles/update.sh"
+alias u="$DOT/config/update.sh"
 alias ur="u && reboot"
 alias us="u && poweroff"
 
