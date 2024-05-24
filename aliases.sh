@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# Get External IP / Internet Speed
-alias myip="curl https://ipinfo.io/json" # or /ip for plain-text ip
-
-# Quickly serve the current directory as HTTP
-alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
+# System
+alias rm="rm -v"
 
 # System information
 alias about="neofetch"
@@ -18,6 +15,9 @@ alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias u="$HOME/dotfiles/update.sh"
 alias ur="u && reboot"
 alias us="u && poweroff"
+
+# Get External IP / Internet Speed
+alias myip="curl https://ipinfo.io/json" # or /ip for plain-text ip
 
 # Fix Brave not rendering elements correct
 alias brave-fix="rm -rf $HOME/.config/BraveSoftware/Brave-Browser/Default/GPUCache"
