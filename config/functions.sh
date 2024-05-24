@@ -66,3 +66,13 @@ catfile() {
     ;;
   esac
 }
+
+# Function to git add -> commit –> push
+gacp() {
+  # Accept two arguments: message and origin (with "master" as default)
+  local message="$1"
+  local origin="${2:-master}"  # Use "master" as default if second argument is not provided
+
+  # Run the git commands using the provided arguments
+  git add . && git commit -m "$message" && git push origin "$origin"
+}
