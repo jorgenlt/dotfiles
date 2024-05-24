@@ -59,7 +59,7 @@ catfile() {
     rm "$temp_file"
     ;;
   *.xlsx)
-    xlsx2csv "$1" | sed 's/,/\t/g'
+    xlsx2csv "$1" | sed 's/,/\t/g' | cat
     ;;
   *)
     cat "$1"
