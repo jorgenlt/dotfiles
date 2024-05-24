@@ -45,20 +45,16 @@ source "$HOME/dotfiles/aliases.sh"
 source "$HOME/dotfiles/functions.sh"
 
 # Load rbenv if installed (to manage your Ruby versions)
-export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
-type -a rbenv > /dev/null && eval "$(rbenv init -)"
+source $HOME/dotfiles/rbenv.sh
 
 # Load pyenv (to manage your Python versions)
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init - 2> /dev/null)" && RPROMPT+='[🐍 $(pyenv version-name)]'
+source $HOME/dotfiles/pyenv.sh
 
 # Load nvm (to manage your node versions)
 source $HOME/dotfiles/nvm.sh
 
-# Rails and Ruby uses the local `bin` folder to store binstubs.
-# So instead of running `bin/rails` like the doc says, just run `rails`
-# Same for `./node_modules/.bin` and nodejs
-export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
+# Load Rails config
+source $HOME/dotfiles/rails.sh
 
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
