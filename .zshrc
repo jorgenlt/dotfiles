@@ -51,10 +51,10 @@ source "$DOT/config/rails.sh"
 # Load MongoDB manager script
 source "$DOT/config/mongodb-manager.sh"
 
-# Load custom aliases
+# Load aliases
 source "$DOT/config/aliases.sh"
 
-# Load custom functions
+# Load functions
 source "$DOT/config/functions.sh"
 
 # Set Android SDK config
