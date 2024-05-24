@@ -36,3 +36,6 @@ alias b="gh browse"
 alias gpom="git pull origin master"
 alias gs="git status"
 
+# bat (a cat clone with syntax highlighting and Git integration)
+alias bat="batcat"
+alias cat="batcat"
