@@ -17,7 +17,7 @@ alias ur="u && reboot"
 alias us="u && poweroff"
 
 # Get External IP / Internet Speed
-alias myip="curl https://ipinfo.io/json" # or /ip for plain-text ip
+alias myip="curl -s  https://ipinfo.io/json | jq" 
 
 # Fix Brave not rendering elements correct
 alias brave-fix="rm -rf $HOME/.config/BraveSoftware/Brave-Browser/Default/GPUCache"
