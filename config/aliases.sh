@@ -4,7 +4,7 @@
 alias rm="rm -v"
 
 # System information
-alias about="neofetch"
+alias about="fastfetch"
 alias hardware="sudo lshw"
 alias cpu="cpu_temp"
 alias temps="watch -n 2 sensors"
