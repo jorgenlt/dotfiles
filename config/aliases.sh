@@ -2,6 +2,7 @@
 
 # System
 alias rm="rm -v"
+alias fa="find . | grep -i" # Find all. Files and folders. Case insensitive.
 
 # System information
 alias about="fastfetch"
