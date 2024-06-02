@@ -32,6 +32,7 @@ brew upgrade
 
 print_header "CLEANING UP OLD HOMEBREW PACKAGES"
 brew cleanup
+echo "Cleanup complete."
 
 sleep 1
 
