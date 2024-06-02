@@ -44,6 +44,13 @@ fi
 # Check if Input Remapper is installed
 if [ -d "$HOME/.config/input-remapper-2" ]; then
   echo "Input Remapper found ✅"
+  
+  # If Input Remapper preset folder for laptop exists, run a script to create the appropriate symlink
+  if [ -d "$HOME/.config/input-remapper-2/presets/AT Translated Set 2 keyboard" ]; then
+    $DOT/remapper/create-symlink-laptop.sh
+  else
+    echo "Input Remapper preset folder for laptop does not exist."
+  fi
 else
   echo "Is Input Remapper installed? The folder $HOME/.config/input-remapper-2 cannot be found."
   echo "https://github.com/sezanzeb/input-remapper"
@@ -111,12 +118,5 @@ rm -f $HOME/.zshrc
 # Create symlinks
 ln -sv $DOT/.zshrc $HOME/
 ln -sv $DOT/.gitconfig $HOME/
-
-# If Input Remapper preset folder for laptop exists, run a script to create the appropriate symlink
-if [ -d "$HOME/.config/input-remapper-2/presets/AT Translated Set 2 keyboard" ]; then
-  $DOT/remapper/create-symlink-laptop.sh
-else
-  echo "Input Remapper preset folder for laptop does not exist."
-fi
 
 echo "Installation complete. Restart shell."
