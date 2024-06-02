@@ -4,4 +4,5 @@
 eval "$(starship init zsh)"
 
 # starship.toml moved to dotfiles folder
-export STARSHIP_CONFIG="$HOME/dotfiles/config/starship.toml"
+export STARSHIP_CONFIG="$DOT/config/starship.toml"
+
