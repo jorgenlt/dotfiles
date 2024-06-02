@@ -69,10 +69,9 @@ catfile() {
 
 # Function to git add -> commit –> push
 gacp() {
-  # Accept two arguments: message and origin (with "master" as default)
   local message="$1"
   local origin=$(git_main_branch)
 
-  # Run the git commands using the provided arguments
   git add . && git commit -m "$message" && git push origin "$origin"
 }
+
