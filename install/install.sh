@@ -20,12 +20,23 @@ else
   exit
 fi
 
+# Check if Zsh is installed
+if command -v zsh &>/dev/null; then
+  echo "Zsh found ✅"
+else
+  echo "Zsh is not installed."
+  echo "Starting installation..."
+  sudo apt update
+  sudo apt install zsh -y
+fi
+
 # Check if Oh My Zsh is installed
 if [ -f "$HOME/.oh-my-zsh" ]; then
   echo "Oh My Zsh found ✅"
 else
   echo "Oh My Zsh is not installed."
   echo "https://github.com/ohmyzsh/ohmyzsh"
+  echo "Install Oh My Zsh and restart system."
   echo "Installation cancelled."
   exit
 fi
@@ -66,6 +77,7 @@ if command -v chromium &>/dev/null; then
 else
   echo "Chromium is not installed."
   echo "Starting installation..."
+  sudo apt update
   sudo apt install chromium-browser
 fi
 
