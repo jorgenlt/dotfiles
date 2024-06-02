@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Path to dotfiles
+DOT="$HOME/dotfiles"
+
 # Check if Github CLI is installed
 if command -v gh &>/dev/null; then
   echo "Github CLI found ✅"
@@ -108,9 +111,6 @@ else
   echo "Installation cancelled."
   exit
 fi
-
-# Path to dotfiles
-DOT="$HOME/dotfiles"
 
 # Remove files from home folder
 rm -f $HOME/.gitconfig
