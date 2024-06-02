@@ -8,5 +8,5 @@ if [ ! -L "$SYMLINK_PATH" ]; then
   # Create the symlink
   ln -sv "$SOURCE_FILE" "$SYMLINK_PATH"
 else
-  echo "Symlink already exists."
+  echo "Symlink for $SYMLINK_PATH in Input Remapper exists ✅."
 fi
