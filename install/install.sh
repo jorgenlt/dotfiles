@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to dotfiles
-DOT="$HOME/dotfiles"
+export DOT="$HOME/dotfiles"
 
 # Check if Github CLI is installed
 if command -v gh &>/dev/null; then
