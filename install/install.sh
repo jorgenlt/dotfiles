@@ -28,15 +28,15 @@ else
   echo "Starting installation..."
   sudo apt update
   sudo apt install zsh -y
+  echo "Restart system."
 fi
 
 # Check if Oh My Zsh is installed
-if [ -f "$HOME/.oh-my-zsh" ]; then
+if [ -d "$HOME/.oh-my-zsh" ]; then
   echo "Oh My Zsh found ✅"
 else
   echo "Oh My Zsh is not installed."
   echo "https://github.com/ohmyzsh/ohmyzsh"
-  echo "Install Oh My Zsh and restart system."
   echo "Installation cancelled."
   exit
 fi
