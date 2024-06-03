@@ -1,1 +1,1 @@
-My dotfiles.
+My dotfiles and setup for linux (Pop!_OS).

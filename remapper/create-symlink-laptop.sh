@@ -4,9 +4,12 @@ SOURCE_FILE="$DOT/remapper/jlt-colemak-custom.json"
 SYMLINK_PATH="$HOME/.config/input-remapper-2/presets/AT Translated Set 2 keyboard/jlt-colemak-custom.json"
 
 # Check if the symlink already exists
-if [ ! -L "$SYMLINK_PATH" ]; then
-  # Create the symlink
-  ln -sv "$SOURCE_FILE" "$SYMLINK_PATH"
+if [ -L "$SYMLINK_PATH" ]; then
+  echo "Input Remapper laptop preset symlink ✅"
+  echo
 else
-  echo "Symlink for $SYMLINK_PATH in Input Remapper exists ✅."
+  # Create the symlink
+  ln -s "$SOURCE_FILE" "$SYMLINK_PATH"
+  echo "Symlink created for Input Remapper laptop preset"
+
 fi
