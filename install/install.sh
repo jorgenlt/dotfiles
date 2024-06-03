@@ -53,7 +53,7 @@ if [ -d "$HOME/.config/input-remapper-2" ]; then
   echo "Input Remapper ✅"
   echo
 else
-  echo "Is Input Remapper installed? The folder $HOME/.config/input-remapper-2 cannot be."
+  echo "Is Input Remapper installed? The folder $HOME/.config/input-remapper-2 cannot be found."
   echo "https://github.com/sezanzeb/input-remapper"
   echo "Install and open application to create config folders."
   echo "Installation cancelled."
