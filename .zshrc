@@ -13,7 +13,7 @@ plugins=(
   copyfile            # Puts the contents of a file in your system clipboard
   dirhistory          # Adds keyboard shortcuts for navigating directory history and hierarchy. Alt + arrows.
   extract             # Extracts any archive file you pass it
-  git                 #  Git aliases and a few useful functions
+  git                 # Git aliases and a few useful functions
   gitfast             # Adds completion for Git
   history             # Provides convenient aliases for using the history command
   last-working-dir    # Keeps track of the last used working directory
