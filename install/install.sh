@@ -75,7 +75,7 @@ check_directory "$HOME/.config/input-remapper-2" "Input Remapper" "https://githu
 
 # If Input Remapper preset folder for laptop exists, run a script to create the appropriate symlink
 if [ -d "$HOME/.config/input-remapper-2/presets/AT Translated Set 2 keyboard" ]; then
-  $DOT/remapper/create-symlink-laptop.sh
+  $DOT/config/remapper/create-symlink-laptop.sh
 else
   echo "Input Remapper preset folder for laptop does not exist."
 fi

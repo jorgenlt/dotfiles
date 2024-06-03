@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_FILE="$DOT/remapper/jlt-colemak-custom.json"
+SOURCE_FILE="$DOT/config/remapper/jlt-colemak-custom.json"
 SYMLINK_PATH="$HOME/.config/input-remapper-2/presets/AT Translated Set 2 keyboard/jlt-colemak-custom.json"
 
 # Check if the symlink already exists
