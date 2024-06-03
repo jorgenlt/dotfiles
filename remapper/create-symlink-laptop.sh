@@ -11,4 +11,5 @@ else
   # Create the symlink
   ln -s "$SOURCE_FILE" "$SYMLINK_PATH"
   echo "Symlink created for Input Remapper laptop preset"
+  echo
 fi
