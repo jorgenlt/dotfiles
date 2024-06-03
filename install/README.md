@@ -1,0 +1,1 @@
+Script to check if certain applications are installed (and installs some of them). Creates necessary symlinks.
