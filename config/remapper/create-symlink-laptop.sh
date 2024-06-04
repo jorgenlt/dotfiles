@@ -9,5 +9,5 @@ if [ -L "$SYMLINK_PATH" ]; then
 else
   # Create the symlink
   ln -s "$SOURCE_FILE" "$SYMLINK_PATH"
-  echo "Symlink created for Input Remapper laptop preset"
+  echo "Symlink created for Input Remapper laptop preset ✅"
 fi

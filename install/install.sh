@@ -73,11 +73,19 @@ check_directory "$HOME/.oh-my-zsh" "Oh My Zsh" "https://github.com/ohmyzsh/ohmyz
 # Check if Input Remapper is installed
 check_directory "$HOME/.config/input-remapper-2" "Input Remapper" "https://github.com/sezanzeb/input-remapper"
 
-# If Input Remapper preset folder for laptop exists, run a script to create the appropriate symlink
+# If Input Remapper preset folder for LAPTOP exists, run a script to create the appropriate symlink
 if [ -d "$HOME/.config/input-remapper-2/presets/AT Translated Set 2 keyboard" ]; then
   $DOT/config/remapper/create-symlink-laptop.sh
 else
   echo "Input Remapper preset folder for laptop does not exist."
+fi
+echo
+
+# If Input Remapper preset folder for DESKTOP exists, run a script to create the appropriate symlink
+if [ -d "$HOME/.config/input-remapper-2/presets/Ducky Ducky One2 Mini" ]; then
+  $DOT/config/remapper/create-symlink-desktop.sh
+else
+  echo "Input Remapper preset folder for desktop does not exist."
 fi
 echo
 
