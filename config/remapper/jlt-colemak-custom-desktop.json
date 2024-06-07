@@ -166,7 +166,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "KEY_KPASTERISK",
+        "output_symbol": "Shift_R + apostrophe",
         "mapping_type": "key_macro"
     },
     {
@@ -567,23 +567,6 @@
         ],
         "target_uinput": "keyboard",
         "output_symbol": "Super_L",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 100,
-                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
-            },
-            {
-                "type": 1,
-                "code": 17,
-                "origin_hash": "53035ff0e2c9245269906585a7256aaa"
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "Shift_R + apostrophe",
         "mapping_type": "key_macro"
     }
 ]
