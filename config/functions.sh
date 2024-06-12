@@ -31,7 +31,7 @@ suspend_system() {
 suspend_system_battery() {
   local THRESHOLD=$1
 
-  echo "\nSystem will sleep when battery level is $THRESHOLD%\n"
+  echo "\nSystem will sleep when the battery level is $THRESHOLD%\n"
 
   while true; do
     # Get the current battery percentage
@@ -61,6 +61,31 @@ shutdown_system() {
   display_countdown $total_seconds
 
   sudo shutdown now
+}
+
+# Function to shut down the system by battery level
+shutdown_system_battery() {
+  local THRESHOLD=$1
+
+  echo "\nSystem will shut down when the battery level is $THRESHOLD%\n"
+
+  while true; do
+    # Get the current battery percentage
+    local BATTERY_LEVEL=$(upower -i $(upower -e | grep BAT) | awk '/percentage/ {print int($2)}')
+
+    # Check if the battery level is less than or equal to the threshold
+    if [ "$BATTERY_LEVEL" -le "$THRESHOLD" ]; then
+      echo "\n"
+      echo "Battery level is $THRESHOLD%, shutting down the system...\n"
+      notify-send "Battery threshold reached." "Shutting down the system in 1 minute."
+      shutdown_system 1
+    fi
+
+    printf "\rCurrent battery level: %s%%" "$BATTERY_LEVEL"
+
+    # Wait for a minute before checking again
+    sleep 60
+  done
 }
 
 # Function to get the CPU temperature
