@@ -16,7 +16,7 @@ display_countdown() {
   done
 }
 
-# Function to suspend the system
+# Function to suspend the system by minutes
 suspend_system() {
   local total_minutes=$1
   local total_seconds=$((total_minutes * 60))
@@ -25,6 +25,31 @@ suspend_system() {
   display_countdown $total_seconds
 
   sudo systemctl suspend
+}
+
+# Function to suspend the system by battery level
+suspend_system_battery() {
+  local THRESHOLD=$1
+
+  echo "\nSystem will sleep when battery level is $THRESHOLD%\n"
+
+  while true; do
+    # Get the current battery percentage
+    local BATTERY_LEVEL=$(upower -i $(upower -e | grep BAT) | awk '/percentage/ {print int($2)}')
+
+    # Check if the battery level is less than or equal to the threshold
+    if [ "$BATTERY_LEVEL" -le "$THRESHOLD" ]; then
+      echo "\n"
+      echo "Battery level is $THRESHOLD%, suspending the system...\n"
+      notify-send "Battery threshold reached." "Suspending system in 1 minute."
+      suspend_system 1
+    fi
+
+    printf "\rCurrent battery level: %s%%" "$BATTERY_LEVEL"
+
+    # Wait for a minute before checking again
+    sleep 60
+  done
 }
 
 # Function to shut down the system
@@ -74,4 +99,3 @@ gacp() {
 
   git add . && git commit -m "$message" && git push origin "$origin"
 }
-
