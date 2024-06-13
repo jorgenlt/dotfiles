@@ -3,6 +3,7 @@
 # System
 alias rm="rm -v"
 alias fa="find . | grep -i" # Find all. Files and folders. Case insensitive.
+alias duc="du -sh ./" # Disk usage current directory
 
 # System information
 alias about="fastfetch"
