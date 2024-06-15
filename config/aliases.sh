@@ -4,7 +4,7 @@
 alias rm="rm -v"
 alias fa="find . | grep -i" # Find all. Files and folders. Case insensitive.
 alias duc="du -sh ./" # Disk usage current directory
-alias laf="ls -d1 */" # List all folders in currrent directory
+alias lf="ls -d1 */" # List all folders in currrent directory
 
 # System information
 alias about="fastfetch"
