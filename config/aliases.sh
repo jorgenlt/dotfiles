@@ -20,6 +20,9 @@ alias u="$DOT/config/update.sh"
 alias ur="u && reboot"
 alias us="u && poweroff"
 
+# Apps
+alias ai="node ~/simple-ai-cli"
+
 # Get External IP / Internet Speed
 alias myip="curl -s  https://ipinfo.io/json | jq" 
 
@@ -29,10 +32,8 @@ alias brave-fix="rm -rf $HOME/.config/BraveSoftware/Brave-Browser/Default/GPUCac
 # Use discrete GPU
 alias dgpu="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
 
-# Open all files in IDE
-alias c="code ."
-
 # Development aliases
+alias c="code ."
 alias dev="npm run dev"
 
 # git / github
