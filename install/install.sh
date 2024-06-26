@@ -55,6 +55,8 @@ check_command gh "Github CLI" "https://github.com/cli/cli/tree/trunk"
 check_command code "VS Code" "https://code.visualstudio.com"
 check_command vivaldi "Vivaldi" "https://vivaldi.com/download/"
 check_command starship "Starship" "https://starship.rs"
+check_command diodon "Diodon" "https://github.com/diodon-dev/diodon"
+check_command rclone "Rclone" "https://rclone.org/install/"
 
 # Check if Zsh is installed and install if not
 if ! command -v zsh &>/dev/null; then
