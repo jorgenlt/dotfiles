@@ -120,7 +120,7 @@ catfile() {
 # Function to git add -> commit –> push
 gacp() {
   local message="$1"
-  local origin=$(git_main_branch)
+  local origin=$(git_current_branch)
 
   git add . && git commit -m "$message" && git push origin "$origin"
 }
