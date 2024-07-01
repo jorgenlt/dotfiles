@@ -91,16 +91,6 @@ else
 fi
 echo
 
-# Check if Chromium is installed and install if not
-if ! command -v chromium &>/dev/null; then
-  echo "Chromium is not installed. Starting installation..."
-  sudo apt update
-  sudo apt install -y chromium-browser
-else
-  echo "Chromium ✅"
-fi
-echo
-
 # Check if FiraCode Nerd Font Mono is installed
 if ! fc-list | grep -iq 'firacode nerd font mono'; then
   echo "FiraCode Nerd Font is not installed."
