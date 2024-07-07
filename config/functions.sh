@@ -19,17 +19,17 @@ display_countdown() {
 # Function to suspend the system by minutes
 suspend_system() {
   if [ $# -eq 0 ]; then
-    sudo systemctl suspend
+    systemctl suspend
     return
   fi
 
   local total_minutes=$1
   local total_seconds=$((total_minutes * 60))
 
-  echo "System will sleep in:"
+  echo "System will suspend in:"
   display_countdown $total_seconds
 
-  sudo systemctl suspend
+  systemctl suspend
 }
 
 # Function to suspend the system by battery level
@@ -41,7 +41,7 @@ suspend_system_battery() {
 
   local threshold=$1
 
-  echo "\nSystem will sleep when the battery level is $threshold%\n"
+  echo "\nSystem will suspend when the battery level is $threshold%\n"
 
   while true; do
     # Get the current battery percentage
@@ -65,7 +65,7 @@ suspend_system_battery() {
 # Function to shut down the system
 shutdown_system() {
   if [ $# -eq 0 ]; then
-    sudo systemctl shutdown now
+    poweroff
     return
   fi
 
@@ -75,7 +75,7 @@ shutdown_system() {
   echo "System will shut down in:"
   display_countdown $total_seconds
 
-  sudo shutdown now
+  poweroff
 }
 
 # Function to shut down the system by battery level
