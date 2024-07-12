@@ -33,6 +33,9 @@ source "$DOT/config/terminal-config.sh"
 # Load homebrew
 source "$DOT/config/homebrew.sh"
 
+# Load pipx config
+source "$DOT/config/pipx.sh"
+
 # Load pyenv
 source "$DOT/config/pyenv.sh"
 
