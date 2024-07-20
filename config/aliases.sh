@@ -2,7 +2,14 @@
 
 # System
 alias rm="rm -v"
+
 alias fa="find . | grep -i" # Find all. Files and folders. Case insensitive.
+alias fa1="find . -maxdepth 1 | grep -i" # Find all. Files and folders. Maxdepth 1. Case insensitive.
+alias fa2="find . -maxdepth 2 | grep -i" # Find all. Files and folders. Maxdepth 2. Case insensitive.
+alias fa3="find . -maxdepth 3 | grep -i" # Find all. Files and folders. Maxdepth 3. Case insensitive.
+alias fd1="find . -maxdepth 1 -type d -name" # Find directories, maxdepth 1
+alias ff1="find . -maxdepth 1 -type f -name" # Find files, maxdepth 1
+
 alias duc="du -sh ./" # Disk usage current directory
 alias lf="ls -d1 */" # List all folders in currrent directory
 
