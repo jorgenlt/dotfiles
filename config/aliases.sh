@@ -29,7 +29,7 @@ alias us="u && poweroff"
 
 # Apps
 alias ai="node ~/simple-ai-cli"
-alias yt="cd ~/Downloads && yt-dlp -S 'ext'" # Download the best video with the best extension (https://github.com/yt-dlp/yt-dlp)
+alias yt="cd ~/Downloads && yt-dlp --write-subs -S 'ext'" # Download the best video with the best extension. Subs incl. (https://github.com/yt-dlp/yt-dlp)
 
 # Get External IP / Internet Speed
 alias myip="curl -s  https://ipinfo.io/json | jq" 
