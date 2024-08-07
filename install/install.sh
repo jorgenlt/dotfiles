@@ -79,7 +79,7 @@ check_directory "$HOME/.config/input-remapper-2" "Input Remapper" "https://githu
 if [ -d "$HOME/.config/input-remapper-2/presets/AT Translated Set 2 keyboard" ]; then
   $DOT/config/remapper/create-symlink-laptop.sh
 else
-  echo "Input Remapper preset folder for laptop does not exist."
+  echo "Input Remapper preset folder for laptop does not exist. ℹ️"
 fi
 echo
 
@@ -87,7 +87,7 @@ echo
 if [ -d "$HOME/.config/input-remapper-2/presets/Ducky Ducky One2 Mini" ]; then
   $DOT/config/remapper/create-symlink-desktop.sh
 else
-  echo "Input Remapper preset folder for desktop does not exist."
+  echo "Input Remapper preset folder for desktop does not exist. ℹ️"
 fi
 echo
 
