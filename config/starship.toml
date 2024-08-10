@@ -1,10 +1,5 @@
 format = ' [┌─](cyan) $all[└──▶](cyan) '
 
-[nodejs]
-format = 'via [$symbol($version)](dimmed bold green) '
-
-[character]         # The name of the module we are configuring is 'character'
+[character]
 success_symbol = ''
 error_symbol = ''
-# success_symbol = '[ ▸](bold green)'
-# error_symbol = '[ ▸](bold red)'
