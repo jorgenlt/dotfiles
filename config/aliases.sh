@@ -13,6 +13,8 @@ alias ff1="find . -maxdepth 1 -type f -name"  # Find files, maxdepth 1
 alias duc="du -sh ./" # Disk usage current directory
 alias lf="ls -d1 */"  # List all folders in currrent directory
 
+alias wifi-reset="nmcli radio wifi off && sleep 1 && nmcli radio wifi on" # Reset WiFi
+
 # System information
 alias about="fastfetch"
 alias neofetch="fastfetch -c neofetch"
