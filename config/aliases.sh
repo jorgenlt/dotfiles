@@ -52,4 +52,6 @@ alias gs="git status"
 # bat (a cat clone with syntax highlighting and Git integration)
 alias bat="batcat"
 
+# NAS
+alias nas="/run/user/1000/gvfs/smb-share:server=personalcloud.local,share=public"
 
