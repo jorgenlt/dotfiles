@@ -108,11 +108,24 @@ shutdown_system_battery() {
   done
 }
 
-# Function to get the CPU temperature
+# Function to continuously print CPU temperature
 cpu_temp() {
+  echo
+
   while true; do
-    sensors k10temp-pci-00c3 | grep Tctl | awk '{print $2}'
-    sleep 2
+    temp=$(sensors k10temp-pci-00c3 | grep Tctl | awk '{print $2}' | sed 's/+//;s/°C//')
+
+    if (( $(echo "$temp < 50" | bc -l) )); then
+      color='\033[1;32m'  # Bold Green
+    elif (( $(echo "$temp < 70" | bc -l) )); then
+      color='\033[1;33m'  # Bold Yellow
+    else
+      color='\033[1;31m'  # Bold Red
+    fi
+
+    echo -ne "\r${color}      ${temp} °C\033[0m "
+
+    sleep 1
   done
 }
 
