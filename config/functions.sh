@@ -110,7 +110,10 @@ shutdown_system_battery() {
 
 # Function to get the CPU temperature
 cpu_temp() {
-  sensors k10temp-pci-00c3 | grep Tctl | awk '{print $2}'
+  while true; do
+    sensors k10temp-pci-00c3 | grep Tctl | awk '{print $2}'
+    sleep 2
+  done
 }
 
 # Function to cat files
