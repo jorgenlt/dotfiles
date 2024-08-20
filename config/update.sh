@@ -5,37 +5,51 @@ print_header() {
   echo -e "\n\e[1;32m$1\e[0m"
 }
 
-# Update APT package index, upgrade the packages and then clean up old packages
+# - APT -
+# Update APT package index
 print_header "UPDATING APT PACKAGE INDEX"
 sudo apt update
 
-print_header "UPGRADING APT PACKAGES"
-sudo apt upgrade -y --allow-downgrades
+# Upgrade if there are updates available and cleanup after
+if [ $(apt list --upgradable 2>/dev/null | grep -c '\-security') -gt 0 ]; then
+  print_header "UPGRADING APT PACKAGES"
+  sudo apt upgrade -y --allow-downgrades
 
-print_header "CLEANING UP OLD APT PACKAGES"
-sudo apt autoremove -y
+  print_header "CLEANING UP OLD APT PACKAGES"
+  sudo apt autoremove -y
+else
+  echo
+  echo "No packages to upgrade."
+fi
 
+# - SNAP -
 # Update SNAP packages
-print_header "UPDATING SNAP PACKAGES"
-sudo snap refresh
+if command -v snap &>/dev/null; then
+  print_header "UPDATING SNAP PACKAGES"
+  sudo snap refresh
+fi
 
+# - FLATPAK -
 # Update FLATPAK packages
 print_header "UPDATING FLATPAK PACKAGES"
 flatpak update -y
 
-# Update Homebrew package index, upgrade the packages and then clean up old packages
+# - HOMEBREW -
+# Update Homebrew package index
 print_header "UPDATING HOMEBREW PACKAGE INDEX"
 brew update
 
-print_header "UPGRADING HOMEBREW PACKAGES"
-brew upgrade
+# Upgrade Homebrew packages if there are updates available and run cleanup after
+if [ $(brew outdated --formula | wc -l) -gt 0 ]; then
+  print_header "UPGRADING HOMEBREW PACKAGES"
+  brew upgrade
 
-print_header "CLEANING UP OLD HOMEBREW PACKAGES"
-brew cleanup
-echo "Cleanup complete."
-
-sleep 1
+  print_header "CLEANING UP OLD HOMEBREW PACKAGES"
+  brew cleanup
+  echo "Cleanup complete."
+else
+  echo
+  echo "No updates available for Homebrew packages."
+fi
 
 print_header "* * * UPDATE COMPLETE * * *"
-
-sleep 1
