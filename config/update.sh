@@ -11,7 +11,7 @@ print_header "UPDATING APT PACKAGE INDEX"
 sudo apt update
 
 # Upgrade if there are updates available and cleanup after
-if [ $(apt list --upgradable 2>/dev/null | grep -c '\-security') -gt 0 ]; then
+if [ $(apt list --upgradable 2>/dev/null | wc -l) -gt 1 ]; then
   print_header "UPGRADING APT PACKAGES"
   sudo apt upgrade -y --allow-downgrades
 
