@@ -23,6 +23,7 @@ alias cpu="cpu_temp"
 alias temps="watch -n 2 sensors"
 alias nvidia="watch -n 2 nvidia-smi"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
+alias wireless-info="lspci -vv -s 01:00.0"
 
 # System update
 alias u="$DOT/config/update.sh"
