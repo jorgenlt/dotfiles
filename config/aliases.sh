@@ -36,9 +36,9 @@ alias up="u && poweroff"
 alias ai="node ~/simple-ai-cli"
 
 # YT-DLP (https://github.com/yt-dlp/yt-dlp)
-alias yt="cd ~/Downloads && yt-dlp --write-subs -S 'ext'"           # Download the best video with the best extension. Subs incl.
-alias yt-1080="cd ~/Downloads && yt-dlp --write-subs -S 'res:1080'" # 1080p. Subs incl.
-alias yt-720="cd ~/Downloads && yt-dlp --write-subs -S 'res:720'"   # 720p. Subs incl.
+alias yt="cd ~/Videos && yt-dlp --write-subs -S 'ext'"           # Download the best video with the best extension. Subs incl.
+alias yt-1080="cd ~/Videos && yt-dlp --write-subs -S 'res:1080'" # 1080p. Subs incl.
+alias yt-720="cd ~/Videos && yt-dlp --write-subs -S 'res:720'"   # 720p. Subs incl.
 
 # Get IP info
 alias myip="curl -s  https://ipinfo.io/json | jq" 
