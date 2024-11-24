@@ -34,6 +34,7 @@ alias up="u && poweroff"
 
 # Apps
 alias ai="node ~/simple-ai-cli"
+alias mpv="flatpak run io.mpv.Mpv"
 
 # YT-DLP (https://github.com/yt-dlp/yt-dlp)
 alias yt="cd ~/Videos && yt-dlp --write-subs -S 'ext'"           	# Download the best video with the best extension. Subs incl.
