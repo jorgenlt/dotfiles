@@ -153,6 +153,30 @@ catfile() {
   esac
 }
 
+# Function to bat files
+batfile() {
+  case "$1" in
+  *.pdf)
+    pdftotext "$1" - | bat
+    ;;
+  *.ods | *.odt)
+    odt2txt "$1" | bat
+    ;;
+  *.docx)
+    temp_file=$(mktemp)
+    docx2txt "$1" "$temp_file"
+    bat "$temp_file"
+    rm "$temp_file"
+    ;;
+  *.xlsx)
+    xlsx2csv "$1" | sed 's/,/\t/g' | bat
+    ;;
+  *)
+    bat "$1"
+    ;;
+  esac
+}
+
 # Function to git add -> commit –> push
 gacp() {
   local message="$1"
