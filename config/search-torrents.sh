@@ -10,6 +10,7 @@ fi
 s="$*"
 
 websites=(
+  "https://www.imdb.com/find/?q=${s}"
   "https://www.limetorrents.lol/search/all/${s}"
   "https://torrentgalaxy.to/torrents.php?search=${s}"
   "https://cloudtorrents.com/search?query=${s}"
