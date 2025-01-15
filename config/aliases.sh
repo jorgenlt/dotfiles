@@ -3,12 +3,12 @@
 # System
 alias rm="rm -v"
 
-alias fa="find . | grep -i"                   # Find all. Files and folders. Case insensitive.
-alias fa1="find . -maxdepth 1 | grep -i"      # Find all. Files and folders. Maxdepth 1. Case insensitive.
-alias fa2="find . -maxdepth 2 | grep -i"      # Find all. Files and folders. Maxdepth 2. Case insensitive.
-alias fa3="find . -maxdepth 3 | grep -i"      # Find all. Files and folders. Maxdepth 3. Case insensitive.
-alias fd1="find . -maxdepth 1 -type d -name"  # Find directories, maxdepth 1
-alias ff1="find . -maxdepth 1 -type f -name"  # Find files, maxdepth 1
+alias fa="find . | grep -i"                  # Find all. Files and folders. Case insensitive.
+alias fa1="find . -maxdepth 1 | grep -i"     # Find all. Files and folders. Maxdepth 1. Case insensitive.
+alias fa2="find . -maxdepth 2 | grep -i"     # Find all. Files and folders. Maxdepth 2. Case insensitive.
+alias fa3="find . -maxdepth 3 | grep -i"     # Find all. Files and folders. Maxdepth 3. Case insensitive.
+alias fd1="find . -maxdepth 1 -type d -name" # Find directories, maxdepth 1
+alias ff1="find . -maxdepth 1 -type f -name" # Find files, maxdepth 1
 
 alias duc="du -sh ./" # Disk usage current directory
 alias lf="ls -d1 */"  # List all folders in currrent directory
@@ -36,16 +36,17 @@ alias up="u && poweroff"
 alias ai="node ~/simple-ai-cli"
 alias mpv="flatpak run io.mpv.Mpv"
 alias torrent="$DOT/config/search-torrents.sh"
+alias st="speedtest"
 
 # YT-DLP (https://github.com/yt-dlp/yt-dlp)
-alias yt="cd ~/Videos && yt-dlp --write-subs -S 'ext'"           	# Download the best video with the best extension. Subs incl.
-alias yt-1440="cd ~/Videos && yt-dlp --write-subs -S 'res:1440'" 	# 1440p. Subs incl.
-alias yt-1080="cd ~/Videos && yt-dlp --write-subs -S 'res:1080'" 	# 1080p. Subs incl.
-alias yt-720="cd ~/Videos && yt-dlp --write-subs -S 'res:720'"   	# 720p. Subs incl.
-alias yt-mp3="cd ~/Music && yt-dlp --extract-audio --audio-format mp3"	# Download mp3 audio file.
+alias yt="cd ~/Videos && yt-dlp --write-subs -S 'ext'"                 # Download the best video with the best extension. Subs incl.
+alias yt-1440="cd ~/Videos && yt-dlp --write-subs -S 'res:1440'"       # 1440p. Subs incl.
+alias yt-1080="cd ~/Videos && yt-dlp --write-subs -S 'res:1080'"       # 1080p. Subs incl.
+alias yt-720="cd ~/Videos && yt-dlp --write-subs -S 'res:720'"         # 720p. Subs incl.
+alias yt-mp3="cd ~/Music && yt-dlp --extract-audio --audio-format mp3" # Download mp3 audio file.
 
 # Get IP info
-alias myip="curl -s  https://ipinfo.io/json | jq" 
+alias myip="curl -s  https://ipinfo.io/json | jq"
 
 # Development aliases
 alias c="code ."
@@ -61,4 +62,3 @@ alias bat="batcat"
 
 # NAS
 alias nas="/run/user/1000/gvfs/smb-share:server=personalcloud.local,share=public"
-
