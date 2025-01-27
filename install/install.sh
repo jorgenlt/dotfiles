@@ -187,5 +187,8 @@ echo
 create_symlink_home ".gitconfig"
 create_symlink_home ".zshrc"
 
+# Creating symlink for Pop OS web search plugin
+$DOT/config/popos/web-search-symlink.sh
+
 echo -e "\033[1;32m* * * Installation complete. Restart system. * * *\033[0m"
 echo
