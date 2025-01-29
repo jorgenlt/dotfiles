@@ -116,12 +116,16 @@
             queries: [(name: "Pop!_Planet Wiki", query: "pop-planet.info/wiki/?search=")]
         ),
         (
-            matches: ["rdt", "reddit"],
-            queries: [(name: "reddit", query: "reddit.com/search/?q=")]
+            matches: ["rdt", "reddit", "r"],
+            queries: [(name: "Reddit", query: "reddit.com/search/?q=")]
+        ),
+        (
+            matches: ["r/"],
+            queries: [(name: "Reddit r/", query: "reddit.com/r/")]
         ),
         (
             matches: ["rn"],
-            queries: [(name: "React Native", query: "https://duckduckgo.com/?q=react+native+")]
+            queries: [(name: "React Native", query: "duckduckgo.com/?q=react+native+")]
         ),
         (
             matches: ["sc", "sdcl"],
