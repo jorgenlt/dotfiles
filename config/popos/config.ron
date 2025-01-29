@@ -120,6 +120,10 @@
             queries: [(name: "reddit", query: "reddit.com/search/?q=")]
         ),
         (
+            matches: ["rn"],
+            queries: [(name: "React Native", query: "https://duckduckgo.com/?q=react+native+")]
+        ),
+        (
             matches: ["sc", "sdcl"],
             queries: [(name: "SoundCloud", query: "soundcloud.com/search?q=")]
         ),
