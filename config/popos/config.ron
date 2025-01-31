@@ -65,6 +65,10 @@
             queries: [(name: "IMDB", query: "duckduckgo.com/?q=!+site:imdb.com+")]
         ),
         (
+            matches: ["lib", "libgen"],
+            queries: [(name: "Library Genesis", query: "libgen.is/search.php?req=")]
+        ),
+        (
             matches: ["mdn"],
             queries: [(name: "Mozilla Developer Network", query: "developer.mozilla.org/search?q=")]
         ),
