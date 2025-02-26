@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # System
+alias cl="clear"
 alias duc="du -sh ./"                                                     # Disk usage current directory
 alias fa="find . | grep -i"                                               # Find all. Files and folders. Case insensitive.
 alias fa1="find . -maxdepth 1 | grep -i"                                  # Find all. Files and folders. Maxdepth 1. Case insensitive.
