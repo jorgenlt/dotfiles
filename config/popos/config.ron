@@ -69,6 +69,10 @@
             queries: [(name: "Library Genesis", query: "libgen.is/search.php?req=")]
         ),
         (
+            matches: ["l", "linux"],
+            queries: [(name: "Linux", query: "duckduckgo.com/?q=linux+")]
+        ),
+        (
             matches: ["mdn"],
             queries: [(name: "Mozilla Developer Network", query: "developer.mozilla.org/search?q=")]
         ),
