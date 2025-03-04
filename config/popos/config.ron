@@ -17,7 +17,7 @@
             queries: [(name: "DuckDuckGo", query: "duckduckgo.com/?q=")]
         ),
         (
-            matches: ["ducky"],
+            matches: ["ducky", "!"],
             queries: [(name: "Ducky", query: "duckduckgo.com/?q=!+")]
         ),
         (
