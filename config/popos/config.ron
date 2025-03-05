@@ -17,6 +17,10 @@
             queries: [(name: "DuckDuckGo", query: "duckduckgo.com/?q=")]
         ),
         (
+            matches: ["dict"],
+            queries: [(name: "Dictionary", query: "dictionary.com/browse/")]
+        ),
+        (
             matches: ["ducky", "!"],
             queries: [(name: "Ducky", query: "duckduckgo.com/?q=!+")]
         ),
