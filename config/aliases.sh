@@ -11,6 +11,7 @@ alias fa3="find . -maxdepth 3 | grep -i"                                  # Find
 alias fd1="find . -maxdepth 1 -type d -name"                              # Find directories, maxdepth 1
 alias ff1="find . -maxdepth 1 -type f -name"                              # Find files, maxdepth 1
 alias lf="ls -d1 */"                                                      # List all folders in currrent directory
+alias o="open"                                                            # Open file, folder and URI in default application
 alias rm="rm -v"                                                          # Add verbose to rm
 alias rsync="rsync -r --info=progress2"                                   # Rsync with progress
 alias q="exit"                                                            # Exit (close) terminal
