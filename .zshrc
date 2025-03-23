@@ -30,6 +30,9 @@ source "${ZSH}/oh-my-zsh.sh"
 # Set terminal config
 source "$DOT/config/terminal-config.sh"
 
+# Load cargo
+source "$DOT/config/cargo.sh"
+
 # Load homebrew
 source "$DOT/config/homebrew.sh"
 
