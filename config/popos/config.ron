@@ -89,6 +89,10 @@
             queries: [(name: "npm", query: "npmjs.com/search?q=")]
         ),
         (
+            matches: ["news"],
+            queries: [(name: "News", query: "https://news.google.com/search?q=")]
+        ),
+        (
             matches: ["rdt", "reddit", "r"],
             queries: [(name: "Reddit", query: "reddit.com/search/?q=")]
         ),
