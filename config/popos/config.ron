@@ -37,6 +37,10 @@
             queries: [(name: "Flathub", query: "flathub.org/apps/search/")]
         ),
         (
+            matches: ["f", "finn"],
+            queries: [(name: "Finn", query: "finn.no/recommerce/forsale/search?q=")]
+        ),
+        (
             matches: ["gh", "github"],
             queries: [(name: "GitHub", query: "github.com/search?q=")]
         ),
