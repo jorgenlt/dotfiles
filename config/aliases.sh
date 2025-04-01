@@ -34,6 +34,8 @@ alias up="u && poweroff"
 
 # Apps
 alias ai="node ~/simple-ai-cli"
+alias ail="node ~/simple-ai-cli linux"
+alias aij="node ~/simple-ai-cli javascript"
 alias is="is-fast"
 alias mpv="flatpak run io.mpv.Mpv"
 alias torrent="$DOT/config/search-torrents.sh"
