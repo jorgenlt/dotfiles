@@ -40,6 +40,7 @@ alias is="is-fast"
 alias mpv="flatpak run io.mpv.Mpv"
 alias torrent="$DOT/config/search-torrents.sh"
 alias st="speedtest"
+alias tickrs="tickrs -x --summary -c candle -s AAPL,AMD,EEM,INTC,LIT,MSFT,NVDA,PYPL,TSM,SMH,SPY,QQQ"
 
 # YT-DLP (https://github.com/yt-dlp/yt-dlp)
 alias yt="cd ~/Videos && yt-dlp --write-subs -S 'ext'"                 # Download the best video with the best extension. Subs incl.
