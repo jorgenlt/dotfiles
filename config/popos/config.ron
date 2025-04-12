@@ -70,7 +70,11 @@
         ),
         (
             matches: ["i", "imdb"],
-            queries: [(name: "IMDB", query: "duckduckgo.com/?q=!+site:imdb.com+")]
+            queries: [(
+              name: "IMDB", 
+              query: "duckduckgo.com/?q=!+site:imdb.com+", 
+              icon: "https://static-00.iconduck.com/assets.00/imdb-icon-256x256-r6buuvup.png",
+            )]
         ),
         (
             matches: ["js"],
@@ -94,7 +98,11 @@
         ),
         (
             matches: ["news"],
-            queries: [(name: "News", query: "https://news.google.com/search?q=")]
+            queries: [(
+              name: "News", 
+              query: "https://news.google.com/search?q=", 
+              icon: "https://e7.pngegg.com/pngimages/432/578/png-clipart-google-news-google-i-o-mobile-app-google-blue-angle-thumbnail.png",
+            )]
         ),
         (
             matches: ["rdt", "reddit", "r"],
