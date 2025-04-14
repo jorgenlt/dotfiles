@@ -22,11 +22,16 @@ websites=(
 
 # Open each URL in Vivaldi browser in incognito mode
 for url in "${websites[@]}"; do
+  echo -e "🚀 Opening \e[32m$url\e[0m"
   vivaldi --incognito "$url"
+  echo ""
+  sleep 0.05
 done
 
 # Wait for all background processes to finish
 wait
 
 # Kill the terminal
+echo "Closing terminal..."
+sleep 1
 kill -9 $PPID
