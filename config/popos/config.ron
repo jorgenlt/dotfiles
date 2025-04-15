@@ -13,7 +13,7 @@
             queries: [(name: "Bing", query: "bing.com/search?q=")]
         ),
         (
-            matches: ["ddg"],
+            matches: ["d", "ddg"],
             queries: [(name: "DuckDuckGo", query: "duckduckgo.com/?q=")]
         ),
         (
