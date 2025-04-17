@@ -25,7 +25,7 @@ for url in "${websites[@]}"; do
   echo -e "🚀 Opening \e[32m$url\e[0m"
   vivaldi --incognito "$url"
   echo ""
-  sleep 0.05
+  sleep 0.2
 done
 
 # Wait for all background processes to finish
