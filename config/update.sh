@@ -5,6 +5,9 @@ print_header() {
   echo -e "\n\e[1;32m$1\e[0m"
 }
 
+# Set power profile to High Performance
+system76-power profile performance
+
 # - APT -
 # Update APT package index
 print_header "UPDATING APT PACKAGE INDEX"
@@ -51,5 +54,8 @@ else
   echo
   echo "No updates available for Homebrew packages."
 fi
+
+# Set power profile to Battery Life
+system76-power profile battery
 
 print_header "* * * UPDATE COMPLETE * * *"
