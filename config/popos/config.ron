@@ -1,3 +1,5 @@
+// Icons are saved in ~/.cache/pop-launcher
+
 (
     rules: [
         (
@@ -14,7 +16,11 @@
         ),
         (
             matches: ["d", "ddg"],
-            queries: [(name: "DuckDuckGo", query: "duckduckgo.com/?q=")]
+            queries: [(
+              name: "DuckDuckGo", 
+              query: "duckduckgo.com/?q=",
+              icon: "https://cdn3.iconfinder.com/data/icons/social-media-special/256/duckduckgo-48.png",
+            )]
         ),
         (
             matches: ["dict"],
@@ -22,7 +28,11 @@
         ),
         (
             matches: ["ducky", "!"],
-            queries: [(name: "Ducky", query: "duckduckgo.com/?q=!+")]
+            queries: [(
+              name: "Ducky", 
+              query: "duckduckgo.com/?q=!+",
+              icon: "https://cdn3.iconfinder.com/data/icons/social-media-special/256/duckduckgo-48.png",
+            )]
         ),
         (
             matches: ["dev"],
@@ -77,8 +87,12 @@
             )]
         ),
         (
-            matches: ["js"],
-            queries: [(name: "Javascript", query: "duckduckgo.com/?q=javascript+")]
+            matches: ["js", "javascript"],
+            queries: [(
+              name: "Javascript", 
+              query: "duckduckgo.com/?q=javascript+",
+              icon: "https://cdn.iconscout.com/icon/free/png-128/javascript-24-1174950.png",
+            )]
         ),
         (
             matches: ["lib", "libgen"],
@@ -86,7 +100,11 @@
         ),
         (
             matches: ["l", "linux"],
-            queries: [(name: "Linux", query: "duckduckgo.com/?q=linux+")]
+            queries: [(
+              name: "Linux", 
+              query: "duckduckgo.com/?q=linux+",
+              icon: "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_linux-48.png",
+            )]
         ),
         (
             matches: ["mdn"],
@@ -122,7 +140,11 @@
         ),
         (
             matches: ["u", "ubuntu"],
-            queries: [(name: "Ubuntu", query: "duckduckgo.com/?q=ubuntu+")]
+            queries: [(
+              name: "Ubuntu", 
+              query: "duckduckgo.com/?q=ubuntu+",
+              icon: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/348_Ubuntu_logo-48.png",
+            )]
         ),
         (
             matches: ["wiki"],
