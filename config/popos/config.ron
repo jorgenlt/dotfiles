@@ -67,6 +67,14 @@
             queries: [(name: "Images", query: "google.com/images?q=")]
         ),
         (
+            matches: ["gimp"],
+            queries: [(
+              name: "GIMP", 
+              query: "duckduckgo.com/?q=gimp+",
+              icon: "https://www.file-extensions.org/imgs/app-icon/128/3349/gimp-icon.png",
+            )]
+        ),
+        (
             matches: ["gm"],
             queries: [(name: "Maps", query: "google.com/maps?q=")]
         ),
