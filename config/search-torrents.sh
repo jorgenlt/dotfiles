@@ -15,7 +15,7 @@ websites=(
   "https://torrentgalaxy.to/torrents.php?search=${s}"
   "https://cloudtorrents.com/search?query=${s}"
   "https://www.torrentdownload.info/search?q=${s}"
-  "https://tprbay.xyz/search/${s}"
+  "https://thepiratebay.cloud/search.php?q=${s}"
   "https://yts.mx/browse-movies/${s}"
   "https://1337x.to/search/${s}/1/"
 )
