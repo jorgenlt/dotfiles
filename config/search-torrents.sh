@@ -11,6 +11,8 @@ s="$*"
 
 websites=(
   "https://www.duckduckgo.com/?q=!+site:imdb.com+${s}"
+  "https://eztvx.to/search/${s}"
+  "https://www.torlock.com/?qq=1&q=${s}"
   "https://www.limetorrents.lol/search/all/${s}"
   "https://torrentgalaxy.to/torrents.php?search=${s}"
   "https://cloudtorrents.com/search?query=${s}"
