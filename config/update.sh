@@ -59,3 +59,6 @@ fi
 system76-power profile battery
 
 print_header "* * * UPDATE COMPLETE * * *"
+
+# Play notification sound
+aplay -q $DOT/config/sounds/notification.wav
