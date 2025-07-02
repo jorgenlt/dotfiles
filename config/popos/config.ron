@@ -155,7 +155,7 @@
             )]
         ),
         (
-            matches: ["wiki"],
+            matches: ["wiki", "w"],
             queries: [(name: "Wikipedia", query: "wikipedia.org/w/index.php?search=")]
         ),
         (
