@@ -167,6 +167,10 @@
             )]
         ),
         (
+            matches: ["x"],
+            queries: [(name: "X", query: "x.com/search?q=")]
+        ),
+        (
             matches: ["yh", "yahoo"],
             queries: [(name: "Yahoo!", query: "search.yahoo.com/search?p=")]
         ),
