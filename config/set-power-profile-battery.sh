@@ -4,4 +4,7 @@
 
 system76-power profile battery
 
-notify-send "Power settings" "Power profile set to Battery Life"
+notify-send -i preferences-system-power "Power settings" "Battery Life"
+
+# Play notification sound
+aplay -q /home/jlt/dotfiles/config/sounds/notification.wav

@@ -2,4 +2,7 @@
 
 system76-power profile balanced
 
-notify-send "Power settings" "Power profile set to Balanced"
+notify-send -i preferences-system-power "Power settings" "Balanced"
+
+# Play notification sound
+aplay -q /home/jlt/dotfiles/config/sounds/notification.wav

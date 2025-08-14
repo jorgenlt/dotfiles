@@ -2,4 +2,7 @@
 
 system76-power profile performance
 
-notify-send "Power settings" "Power profile set to High Performance"
+notify-send -i preferences-system-power "Power settings" "Performance"
+
+# Play notification sound
+aplay -q /home/jlt/dotfiles/config/sounds/notification.wav
