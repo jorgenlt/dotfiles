@@ -9,7 +9,7 @@ sleep 5
 
 # Check if OneDrive is mounted
 if mount | grep ~/onedrive >/dev/null; then
-  notify-send "OneDrive connected." "Microsoft OneDrive successfully mounted."
+  notify-send -i /usr/share/icons/Pop/48x48/places/folder-remote.svg "OneDrive connected." "Microsoft OneDrive successfully mounted."
 else
-  notify-send "OneDrive connection failed." "Failed to mount Microsoft OneDrive."
+  notify-send -i /usr/share/icons/Pop/48x48/status/dialog-error.svg "OneDrive connection failed." "Failed to mount Microsoft OneDrive."
 fi
