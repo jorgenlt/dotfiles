@@ -44,6 +44,7 @@ alias notify="aplay -q $DOT/config/sounds/notification.wav"
 alias torrent="$DOT/config/search-torrents.sh"
 alias st="speedtest"
 alias tickrs="tickrs -x --summary -c candle -s AAPL,AMD,EEM,INTC,LIT,MSFT,NVDA,PYPL,TSM,SMH,SPY,QQQ"
+alias update-webui="docker run --rm --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --run-once open-webui" #https://github.com/open-webui/open-webui
 
 # YT-DLP (https://github.com/yt-dlp/yt-dlp)
 alias yt="cd ~/Videos && yt-dlp --write-subs -S 'ext'"                 # Download the best video with the best extension. Subs incl.
