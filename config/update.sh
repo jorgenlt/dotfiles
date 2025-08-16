@@ -6,7 +6,7 @@ print_header() {
 }
 
 # Set power profile to High Performance
-system76-power profile performance
+$DOT/config/set-power-profile-performance.sh
 
 # - APT -
 # Update APT package index
@@ -56,9 +56,12 @@ else
 fi
 
 # Set power profile to Battery Life
-system76-power profile battery
+$DOT/config/set-power-profile-battery.sh
 
 print_header "* * * UPDATE COMPLETE * * *"
+
+# Notification
+notify-send -i pop-os "System update" "Update complete"
 
 # Play notification sound
 aplay -q $DOT/config/sounds/notification.wav
