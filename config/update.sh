@@ -5,8 +5,8 @@ print_header() {
   echo -e "\n\e[1;32m$1\e[0m"
 }
 
-# Set power profile to High Performance
-$DOT/config/set-power-profile-performance.sh
+# Set power profile to Performance
+system76-power profile performance
 
 # - APT -
 # Update APT package index
@@ -55,9 +55,6 @@ else
   echo "No updates available for Homebrew packages."
 fi
 
-# Set power profile to Battery Life
-$DOT/config/set-power-profile-battery.sh
-
 print_header "* * * UPDATE COMPLETE * * *"
 
 # Notification
@@ -65,3 +62,6 @@ notify-send -i pop-os "System update" "Update complete"
 
 # Play notification sound
 aplay -q $DOT/config/sounds/notification.wav
+
+# Set power profile to Battery Life
+system76-power profile battery
