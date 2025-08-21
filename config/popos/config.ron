@@ -131,6 +131,14 @@
             )]
         ),
         (
+            matches: ["op", "openwebui"],
+            queries: [(
+              name: "Open WebUI", 
+              query: "http://localhost:3000/?q=", 
+              icon: "https://openwebui.com/favicon.png",
+            )]
+        ),
+        (
             matches: ["rdt", "reddit", "r"],
             queries: [(name: "Reddit", query: "reddit.com/search/?q=")]
         ),
