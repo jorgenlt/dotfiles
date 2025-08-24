@@ -62,6 +62,7 @@ create_symlink_home() {
 check_command git "Git" "https://git-scm.com/download/linux"
 check_command code "VS Code" "https://code.visualstudio.com/download"
 check_command vivaldi "Vivaldi" "https://vivaldi.com/download/"
+check_command tradingview "TradingView" "https://www.tradingview.com/desktop/"
 
 # Check if GitHub CLI is installed and install if not
 if ! command -v gh &>/dev/null; then
