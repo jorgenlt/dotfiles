@@ -58,6 +58,7 @@ alias myip="curl -s  https://ipinfo.io/json | jq"
 
 # Development aliases
 alias c="code ."
+alias cq="code . && exit"
 alias dev="npm run dev"
 
 # git / github
