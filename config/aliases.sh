@@ -63,6 +63,7 @@ alias dev="npm run dev"
 
 # git / github
 alias b="gh browse"
+alias bq="gh browse && exit"
 alias gpom="git pull origin master"
 alias gs="git status"
 
