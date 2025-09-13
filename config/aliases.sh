@@ -2,6 +2,7 @@
 
 # System
 alias cl="clear"
+alias cf="copyfile"
 alias duc="du -sh ./"                                                     # Disk usage current directory
 alias duf="du -sh * | sort -h"                                            # Disk usage files and folders, sorted by size
 alias fa="find . | grep -i"                                               # Find all. Files and folders. Case insensitive.
