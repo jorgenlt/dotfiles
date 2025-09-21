@@ -155,6 +155,10 @@
             queries: [(name: "Stack Overflow", query: "stackoverflow.com/search?q=")]
         ),
         (
+            matches: ["tw", "tc", "tailwind", "tailwindcss"],
+            queries: [(name: "Tailwind CSS", query: "duckduckgo.com/?q=tailwind+css+")]
+        ),
+        (
             matches: ["u", "ubuntu"],
             queries: [(
               name: "Ubuntu", 
