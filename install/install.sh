@@ -150,6 +150,10 @@ else
   print_header "Oh My Zsh is not installed. Starting installation..."
   echo
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  echo
+  echo "Oh My Zsh was installed, rebooting system"
+  sleep 1
+  reboot
 fi
 echo
 
@@ -188,10 +192,13 @@ else
 fi
 echo
 
+print_header "Installing apt packages"
+sudo apt update
+sudo apt install -y btop htop tree lm-sensors libnotify-bin vlc gnome-tweaks make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+
 # Create symlinks in home folder
 create_symlink_home ".gitconfig"
 create_symlink_home ".zshrc"
-echo
 
 # Creating symlink for Pop OS web search plugin
 $DOT/config/popos/web-search-symlink.sh
