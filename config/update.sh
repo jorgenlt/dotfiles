@@ -5,8 +5,20 @@ print_header() {
   echo -e "\n\e[1;32m$1\e[0m"
 }
 
+detect_machine_type() {
+  if ls /sys/class/power_supply 2>/dev/null | grep -qE '^BAT'; then
+    echo "Laptop"
+    return 0
+  fi
+  echo "Desktop"
+}
+
+TYPE=$(detect_machine_type)
+
 # Set power profile to Performance
-system76-power profile performance
+if [ "$TYPE" = "Laptop" ]; then
+  system76-power profile performance
+fi
 
 # - APT -
 # Update APT package index
@@ -64,4 +76,6 @@ notify-send -i pop-os "System update" "Update complete"
 aplay -q $DOT/config/sounds/notification.wav
 
 # Set power profile to Battery Life
-system76-power profile battery
+if [ "$TYPE" = "Laptop" ]; then
+  system76-power profile battery
+fi
