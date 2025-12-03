@@ -171,6 +171,10 @@
             queries: [(name: "Wikipedia", query: "wikipedia.org/w/index.php?search=")]
         ),
         (
+            matches: ["wa"],
+            queries: [(name: "WhatsApp DM", query: "https://wa.me/")]
+        ),
+        (
             matches: ["www"],
             queries: [(
                 name: "Open Website",
