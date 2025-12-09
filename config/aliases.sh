@@ -76,3 +76,7 @@ alias bat="batcat"
 
 # NAS
 alias nas="/run/user/1000/gvfs/smb-share:server=personalcloud.local,share=public"
+
+# Workflow scripts
+alias copy-with-date="~/dotfiles/config/copy-with-date.sh"
+alias backup-portfolio="copy-with-date -s ~/onedrive/finance/investing/portfolio-master.xlsm -d ~/onedrive/finance/investing/backup/portfolio"
