@@ -67,6 +67,11 @@ else
   echo "No updates available for Homebrew packages."
 fi
 
+# - JOPLIN APP -
+# Update the Joplin app
+print_header "UPDATING JOPLIN"
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+
 print_header "* * * UPDATE COMPLETE * * *"
 
 # Notification
