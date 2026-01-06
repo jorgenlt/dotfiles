@@ -12,6 +12,7 @@ alias fa3="find . -maxdepth 3 | grep -i"                                  # Find
 alias fd1="find . -maxdepth 1 -type d -name"                              # Find directories, maxdepth 1
 alias ff1="find . -maxdepth 1 -type f -name"                              # Find files, maxdepth 1
 alias lf="ls -d1 */"                                                      # List all folders in currrent directory
+alias notify="aplay -q $DOT/config/sounds/notification.wav"
 alias o="open"                                                            # Open file, folder and URI in default application
 alias rm="rm -v"                                                          # Add verbose to rm
 alias rsync="rsync -r --info=progress2"                                   # Rsync with progress
@@ -42,13 +43,9 @@ alias apps="cd $HOME/.local/share/applications"
 alias f="firefox"
 alias is="is-fast"
 alias mpv="flatpak run io.mpv.Mpv"
-alias notify="aplay -q $DOT/config/sounds/notification.wav"
-alias ob="open-bookmarks"
-alias open-bookmarks="node $HOME/open-bookmarks/"
-alias torrent="$DOT/config/search-torrents.sh"
+alias rclone-onedrive="~/dotfiles/config/rclone-onedrive.sh"
 alias st="speedtest"
 alias tickrs="tickrs -x --summary -c candle -s AAPL,AMD,EEM,INTC,LIT,MSFT,NVDA,PYPL,TSM,SMH,SPY,QQQ"
-alias update-webui="docker run --rm --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --run-once open-webui" #https://github.com/open-webui/open-webui
 
 # YT-DLP (https://github.com/yt-dlp/yt-dlp)
 alias yt="cd ~/Videos && yt-dlp --write-subs -S 'ext'"                 # Download the best video with the best extension. Subs incl.
@@ -78,5 +75,8 @@ alias bat="batcat"
 alias nas="/run/user/1000/gvfs/smb-share:server=personalcloud.local,share=public"
 
 # Workflow scripts
-alias copy-with-date="~/dotfiles/config/copy-with-date.sh"
 alias backup-portfolio="copy-with-date -s ~/onedrive/finance/investing/portfolio-master.xlsm -d ~/onedrive/finance/investing/backup/portfolio"
+alias copy-with-date="~/dotfiles/config/copy-with-date.sh"
+alias ob="open-bookmarks"
+alias open-bookmarks="node $HOME/open-bookmarks/"
+alias torrent="$DOT/config/search-torrents.sh"
