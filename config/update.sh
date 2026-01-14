@@ -72,6 +72,11 @@ fi
 print_header "UPDATING JOPLIN"
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 
+# - YT-DLP -
+# Update yt-dlp (https://github.com/yt-dlp/yt-dlp)
+print_header "UPDATING YT-DLP"
+python3 -m pip install -U "yt-dlp[default]"
+
 print_header "* * * UPDATE COMPLETE * * *"
 
 # Notification
