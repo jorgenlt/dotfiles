@@ -18,7 +18,7 @@ websites=(
   "https://cloudtorrents.com/search?query=${s}"
   "https://www.torrentdownload.info/search?q=${s}"
   "https://thepiratebay.cloud/search.php?q=${s}"
-  "https://yts.mx/browse-movies/${s}"
+  "https://www.yts-official.cc/browse-movies?keyword=${s}"
   "https://1337x.to/search/${s}/1/"
 )
 
