@@ -33,7 +33,7 @@ if [[ -z "${SOURCE:-}" || -z "${DEST_DIR:-}" ]]; then
 fi
 
 # Today’s date in the required format
-TODAY=$(date +%Y-%m-%d)
+TODAY=$(date +%Y-%m-%d-%s)
 
 # Preserve the original extension
 EXT="${SOURCE##*.}"
