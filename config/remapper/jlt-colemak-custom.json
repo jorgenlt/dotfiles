@@ -658,5 +658,73 @@
         "target_uinput": "keyboard",
         "output_symbol": "Alt_L + Tab",
         "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 100,
+                "origin_hash": "0c64c979fda14716c05663b585a0cbd9"
+            },
+            {
+                "type": 1,
+                "code": 81,
+                "origin_hash": "0c64c979fda14716c05663b585a0cbd9"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L + Super_L + Down",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 100,
+                "origin_hash": "0c64c979fda14716c05663b585a0cbd9"
+            },
+            {
+                "type": 1,
+                "code": 73,
+                "origin_hash": "0c64c979fda14716c05663b585a0cbd9"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L + Super_L + Up",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 100,
+                "origin_hash": "0c64c979fda14716c05663b585a0cbd9"
+            },
+            {
+                "type": 1,
+                "code": 71,
+                "origin_hash": "0c64c979fda14716c05663b585a0cbd9"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L + Home",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 100,
+                "origin_hash": "0c64c979fda14716c05663b585a0cbd9"
+            },
+            {
+                "type": 1,
+                "code": 79,
+                "origin_hash": "0c64c979fda14716c05663b585a0cbd9"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L + End",
+        "mapping_type": "key_macro"
     }
 ]
