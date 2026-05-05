@@ -13,7 +13,27 @@ detect_machine_type() {
   echo "Desktop"
 }
 
+get_current_power_profile() {
+  system76-power profile | grep "Power Profile:" | awk '{print $3}' | tr '[:upper:]' '[:lower:]'
+}
+
+restore_power_profile() {
+  local original_profile="$1"
+  if [ -n "$original_profile" ]; then
+    print_header "RESTORING POWER PROFILE TO: $original_profile"
+    system76-power profile "$original_profile"
+  fi
+}
+
 TYPE=$(detect_machine_type)
+
+# Save current power profile and set to Performance if laptop
+ORIGINAL_PROFILE=""
+if [ "$TYPE" = "Laptop" ]; then
+  ORIGINAL_PROFILE=$(get_current_power_profile)
+  print_header "CURRENT POWER PROFILE: $ORIGINAL_PROFILE → SWITCHING TO PERFORMANCE"
+  system76-power profile performance
+fi
 
 # Set power profile to Performance
 if [ "$TYPE" = "Laptop" ]; then
@@ -84,13 +104,13 @@ python3 -m pip install -U "yt-dlp[default]"
 
 print_header "* * * UPDATE COMPLETE * * *"
 
+# Restore original power profile
+if [ "$TYPE" = "Laptop" ]; then
+  restore_power_profile "$ORIGINAL_PROFILE"
+fi
+
 # Notification
 notify-send -i pop-os "System update" "Update complete"
 
 # Play notification sound
 aplay -q $DOT/config/sounds/notification.wav
-
-# Set power profile to Battery Life
-if [ "$TYPE" = "Laptop" ]; then
-  system76-power profile battery
-fi
