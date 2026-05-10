@@ -2,7 +2,7 @@
 
 vivaldi &
 vivaldi --app-id=eigpmdhekjlgjgcppnanaanbdmnlnagl &   # outlook
-gnome-terminal &
+# gnome-terminal &
 diodon &
 /home/jlt/.joplin/Joplin.AppImage &
 /home/jlt/dotfiles/config/rclone-onedrive.sh &
