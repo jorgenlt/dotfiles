@@ -19,8 +19,7 @@ websites=(
   "https://www.torrentdownload.info/search?q=${s}"
   "https://tpb.party/search/${s}"
   "https://www.yts-official.cc/browse-movies?keyword=${s}"
-  # "https://1337x.to/search/${s}/1/"
-  "https://www.1337xxx.to/search/${s}/1/"
+  "https://x1337x.cc/search/${s}"
 )
 
 # Open each URL in Vivaldi browser in incognito mode
