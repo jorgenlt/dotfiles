@@ -2,7 +2,7 @@
 
 # Check if at least one argument is provided
 if [ $# -eq 0 ]; then
-  echo "Usage: $0 <argument1> <argument2> ... <argumentN>"
+  echo "Usage: $0 <search query>"
   exit 1
 fi
 
@@ -22,18 +22,30 @@ websites=(
   "https://x1337x.cc/search/${s}/1/"
 )
 
-# Open each URL in Vivaldi browser in incognito mode
+echo "Opening ${#websites[@]} URLs in Vivaldi..."
+echo ""
+
 for url in "${websites[@]}"; do
-  echo -e "🚀 Opening \e[32m$url\e[0m"
-  vivaldi --incognito "$url"
-  echo ""
-  sleep 0.2
+  echo -e "🌐 \e[32m$url\e[0m"
 done
+
+# Open all URLs in ONE browser process
+vivaldi \
+  --incognito \
+  --new-window \
+  "${websites[@]}" \
+  >/dev/null 2>&1 &
+
+disown
+
+echo ""
+echo "Done."
 
 # Wait for all background processes to finish
 wait
 
 # Kill the terminal
+echo ""
 echo "Closing terminal..."
-sleep 1
+sleep 2
 kill -9 $PPID
