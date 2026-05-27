@@ -11,15 +11,15 @@ s="$*"
 
 websites=(
   "https://www.duckduckgo.com/?q=!+site:imdb.com+${s}"
+  "https://x1337x.cc/search/${s}/1/"
+  "https://thepiratebay.org/search.php?q=${s}"
+  "https://www.yts-official.cc/browse-movies?keyword=${s}"
   "https://eztvx.to/search/${s}"
   "https://www.torlock.com/?qq=1&q=${s}"
   "https://www.limetorrents.lol/search/all/${s}"
-  "https://torrentgalaxy.to/torrents.php?search=${s}"
-  "https://cloudtorrents.com/search?query=${s}"
-  "https://www.torrentdownload.info/search?q=${s}"
-  "https://tpb.party/search/${s}"
-  "https://www.yts-official.cc/browse-movies?keyword=${s}"
-  "https://x1337x.cc/search/${s}/1/"
+  "https://www.torrentdownloads.pro/search/?search=${s}"
+  "https://bitsearch.eu/search?q=${s}"
+  "https://ext.to/browse/?q=${s}"
 )
 
 echo "Opening ${#websites[@]} URLs in Vivaldi..."
