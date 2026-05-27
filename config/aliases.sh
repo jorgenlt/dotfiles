@@ -14,7 +14,6 @@ alias ff1="find . -maxdepth 1 -type f -name"                              # Find
 alias lf="ls -d1 */"                                                      # List all folders in currrent directory
 alias notify="aplay -q $DOT/config/sounds/notification.wav"
 alias o="open"                                                            # Open file, folder and URI in default application
-alias rm="rm -v"                                                          # Add verbose to rm
 alias rsync="rsync -r --info=progress2"                                   # Rsync with progress
 alias q="exit"                                                            # Exit (close) terminal
 alias wifi-reset="nmcli radio wifi off && sleep 1 && nmcli radio wifi on" # Reset WiFi
