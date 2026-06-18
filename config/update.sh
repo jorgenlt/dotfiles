@@ -77,7 +77,7 @@ brew update
 # Upgrade Homebrew packages if there are updates available and run cleanup after
 if [ $(brew outdated --formula | wc -l) -gt 0 ]; then
   print_header "UPGRADING HOMEBREW PACKAGES"
-  brew upgrade
+  brew upgrade -y
 
   print_header "CLEANING UP OLD HOMEBREW PACKAGES"
   brew cleanup
