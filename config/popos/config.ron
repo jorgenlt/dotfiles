@@ -30,7 +30,7 @@
             matches: ["ducky", "!"],
             queries: [(
               name: "Ducky", 
-              query: "duckduckgo.com/?q=!+",
+              query: "duckduckgo.com/?q=!",
               icon: "https://cdn3.iconfinder.com/data/icons/social-media-special/256/duckduckgo-48.png",
             )]
         ),
