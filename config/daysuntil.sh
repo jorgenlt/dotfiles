@@ -15,4 +15,4 @@ else
   echo "$((-days)) days ago was $target"
 fi
 
-# Usage: ./daysleft.sh 2026-12-25
+# Usage: ./daysuntil.sh 2026-12-25
