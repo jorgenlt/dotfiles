@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SOURCE_FILE_KEYBOARD="$DOT/config/remapper/jlt-colemak-custom-desktop.json"
-SYMLINK_PATH_KEYBOARD="$HOME/.config/input-remapper-2/presets/Ducky Ducky One2 Mini/jlt-colemak-custom-desktop.json"
+SYMLINK_PATH_KEYBOARD="$HOME/.config/input-remapper-2/presets/USB-HID Keyboard/jlt-colemak-custom-desktop.json"
 
 print_header() {
   echo -e "\n\e[1;32m$1\e[0m"
