@@ -39,9 +39,6 @@ source "$DOT/config/homebrew.sh"
 # Load pipx config
 source "$DOT/config/pipx.sh"
 
-# Load pyenv
-source "$DOT/config/pyenv.sh"
-
 # Load rbenv
 source "$DOT/config/rbenv.sh"
 
@@ -68,3 +65,6 @@ source "$DOT/config/starship.sh"
 
 # Enable syntax highlighting in the current interactive shell
 source "$HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+# Load pyenv
+source "$DOT/config/pyenv.sh"
