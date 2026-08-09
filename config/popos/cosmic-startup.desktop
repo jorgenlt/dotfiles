@@ -1,0 +1,12 @@
+cat > ~/Desktop/cosmic-startup.desktop << 'EOF'
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Cosmic Startup
+Comment=Run Cosmic startup script
+Exec=/home/jlt/dotfiles/config/popos/cosmic-startup.sh
+Icon=utilities-terminal
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+EOF

@@ -203,5 +203,8 @@ create_symlink_home ".zshrc"
 # Creating symlink for Pop OS web search plugin
 $DOT/config/popos/cosmic-web-search-symlink.sh
 
+# Creating symlink for startup applications (cosmic-startup.desktop)
+$DOT/config/popos/cosmic-startup-symlink.sh
+
 print_header "* * * Installation complete. Restart system. * * *"
 echo
