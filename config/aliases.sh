@@ -18,6 +18,9 @@ alias rsync="rsync -r --info=progress2"                                   # Rsyn
 alias q="exit"                                                            # Exit (close) terminal
 alias wifi-reset="nmcli radio wifi off && sleep 1 && nmcli radio wifi on" # Reset WiFi
 
+# Cosmic DE
+alias kill-cosmic-panel="kill $(pgrep -x cosmic-panel)"			  # Kill and restarts Cosmic Panel
+
 # System information
 alias about="fastfetch"
 alias neofetch="fastfetch -c neofetch"
