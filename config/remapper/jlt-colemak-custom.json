@@ -554,7 +554,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "ISO_Level3_Shift + dead_diaeresis\t",
+        "output_symbol": "modify(ISO_Level3_Shift, key(dead_diaeresis)).key(space)",
         "mapping_type": "key_macro"
     },
     {
