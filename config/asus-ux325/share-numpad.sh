@@ -5,7 +5,7 @@ export XAUTHORITY=/home/jlt/.Xauthority
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
 export XDG_RUNTIME_DIR=/run/user/1000
 
-notify-send -i pop-os "share-numpad.sh" "in home folder"
+# notify-send -i pop-os "share-numpad.sh"
 
-echo "share-numpad.sh"
+playerctl play-pause
 
