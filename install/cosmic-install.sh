@@ -105,18 +105,6 @@ else
 fi
 echo
 
-# Check if Diodon is installed and install if not
-if ! command -v diodon &>/dev/null; then
-  print_header "Diodon is not installed. Starting installation..."
-  echo
-  sudo add-apt-repository ppa:diodon-team/stable
-  sudo apt-get update
-  sudo apt-get install -y diodon
-else
-  print_header "Diodon ✅"
-fi
-echo
-
 # Check if Rclone is installed and install if not
 if ! command -v rclone &>/dev/null; then
   print_header "Rclone is not installed. Starting installation..."
@@ -173,22 +161,6 @@ if [ -d "$HOME/.config/input-remapper-2/presets/Ducky Ducky One2 Mini" ]; then
   $DOT/config/remapper/create-symlink-desktop.sh
 else
   print_header "Input Remapper preset folder for desktop does not exist. ℹ️"
-fi
-echo
-
-# Check if FiraCode Nerd Font Mono is installed
-if ! fc-list | grep -iq 'firacode nerd font mono'; then
-  print_header "FiraCode Nerd Font is not installed."
-  echo "https://www.nerdfonts.com/font-downloads"
-  echo "Installation cancelled."
-  echo
-  sleep 1
-  echo "Opening installation URL"
-  sleep 1
-  open "https://www.nerdfonts.com/font-downloads"
-  exit 1
-else
-  print_header "FiraCode Nerd Font Mono ✅"
 fi
 echo
 
