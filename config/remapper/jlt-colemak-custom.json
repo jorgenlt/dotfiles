@@ -622,7 +622,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Super_L + Home",
+        "output_symbol": "Super_L + 1",
         "mapping_type": "key_macro"
     },
     {
@@ -639,7 +639,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Super_L + End",
+        "output_symbol": "Super_L + 0",
         "mapping_type": "key_macro"
     },
     {
